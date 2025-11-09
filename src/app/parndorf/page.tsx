@@ -79,6 +79,8 @@ const parndorfData = {
   }
 };
 
+export const dynamic = 'force-dynamic';
+
 export default async function ParndorfPage() {
   let openingHours = [];
 

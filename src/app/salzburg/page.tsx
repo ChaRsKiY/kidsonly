@@ -79,6 +79,8 @@ const salzburgData = {
   }
 };
 
+export const dynamic = 'force-dynamic';
+
 export default async function SalzburgPage() {
   let openingHours = [];
 
