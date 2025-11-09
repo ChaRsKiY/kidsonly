@@ -83,7 +83,7 @@ export default async function SalzburgPage() {
   let openingHours = [];
 
   try {
-    const response = await fetch(`http://localhost:3000/api/salzburg/hours`);
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/salzburg/hours`);
     const data = await response.json();
 
     if (data.success && data.data && data.data.openingHours) {
