@@ -79,13 +79,11 @@ const parndorfData = {
   }
 };
 
-export const dynamic = 'force-dynamic';
-
 export default async function ParndorfPage() {
   let openingHours = [];
-
+  
   try {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/parndorf/hours`);
+    const response = await fetch(`https://kidsonly.vercel.app/api/parndorf/hours`);
     const data = await response.json();
 
     if (data.success && data.data && data.data.openingHours) {
