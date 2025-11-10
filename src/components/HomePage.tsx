@@ -20,6 +20,13 @@ export function HomePage() {
     <main className="min-h-screen bg-white dark:bg-zinc-950 transition-colors">
       {/* Hero Section */}
       <section className="h-screen flex items-center justify-center overflow-hidden z-10 relative" aria-label="Hero-Bereich">
+        <ImageWithFallback
+          src="/hero_bg.jpg"
+          alt="Hero Background Image"
+          className="object-cover opacity-30"
+          fill
+          priority
+        />
         <div className="relative z-20 text-center px-6 max-w-4xl mx-auto">
           <MotionDiv
             initial={{ opacity: 0, y: 30 }}
@@ -27,14 +34,14 @@ export function HomePage() {
             transition={{ duration: 0.8 }}
           >
             <ImageWithFallback
-              src="/logo.png"
+              src="/kids_only_logo.svg"
               alt="Kids Only Logo - Kinderbekleidung zu Outlet-Preisen"
-              className="w-84 h-auto mx-auto mb-8 max-md:w-64"
-              width={256}
-              height={256}
+              className="w-96 h-auto mx-auto mb-8 max-md:w-64"
+              width={512}
+              height={512}
               priority
             />
-            <p className="text-xl mb-8 max-w-2xl mx-auto max-sm:text-base" itemProp="slogan">
+            <p className="text-xl mb-8 max-w-2xl mx-auto max-sm:text-base font-bold text-muted-foreground dark:text-zinc-100" itemProp="slogan">
                Markenkleidung zu Outlet-Preisen
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -48,7 +55,6 @@ export function HomePage() {
               </Button>
               <Button
                 asChild
-                variant="outline"
                 size="xl"
               >
                 <Link href="/salzburg">

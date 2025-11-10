@@ -72,7 +72,7 @@ const parndorfData = {
     "Blue Seven"
   ],
   images: {
-    hero: "/parndorf/cover.jpeg",
+    hero: "/parndorf/cover.jpg",
     interior: "/parndorf/img1.JPG",
     display: "/parndorf/img2.JPG",
     centerPlan: "/parndorf/kidsonly_plan_parndorf.png"

@@ -1,21 +1,21 @@
 "use client"
 
 import { motion } from "framer-motion";
-import { Store, Sun, Moon } from "lucide-react";
-import { useTheme } from "./ThemeContext";
+import { Sun, Moon } from "lucide-react";
+//import { useTheme } from "./ThemeContext";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 export function Header() {
-  const { theme, toggleTheme } = useTheme();
+  //const { theme, toggleTheme } = useTheme();
 
   const pathname = usePathname();
   const currentPage = pathname.split('/')[1] || 'home';
   
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-zinc-950 transition-colors">
-      <div className="container mx-auto px-6 py-4">
+      <div className="container mx-auto p-6">
         <div className="flex items-center justify-between">
           <motion.div
             className="flex items-center gap-3 group"
@@ -23,7 +23,7 @@ export function Header() {
             whileTap={{ scale: 0.98 }}
           >
             <Link href="/" className="flex flex-col items-start">
-              <Image src="/logo.png" alt="Kids Only" width={100} height={100} />
+              <Image src="/kids_only_logo.svg" alt="Kids Only" width={120} height={120} />
             </Link>
           </motion.div>
 
@@ -46,6 +46,7 @@ export function Header() {
             >
               Salzburg
             </NavLink>
+            {/*
             <motion.button
               onClick={toggleTheme}
               className="p-2 rounded-lg bg-zinc-100 dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors"
@@ -55,6 +56,7 @@ export function Header() {
             >
               {theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
             </motion.button>
+            */}
           </nav>
 
           <div className="md:hidden flex items-center gap-2">
@@ -78,6 +80,7 @@ export function Header() {
             >
               Salzburg
             </Link>
+            {/*
             <motion.button
               onClick={toggleTheme}
               className="ml-1 p-2 rounded-lg bg-zinc-100 dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300"
@@ -86,6 +89,7 @@ export function Header() {
             >
               {theme === 'dark' ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
             </motion.button>
+            */}
           </div>
         </div>
       </div>
