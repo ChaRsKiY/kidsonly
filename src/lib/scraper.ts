@@ -27,7 +27,7 @@ export async function scrapeParndorfHours(): Promise<ScrapedData> {
     
     const openingHours: OpeningHours[] = [];
     
-    // Ищем таблицу с часами работы
+    // Search for table with opening hours
     const hoursTable = $('table').filter((i, table) => {
       const tableText = $(table).text();
       return tableText.includes('Montag') || tableText.includes('Donnerstag') || tableText.includes('Freitag');
@@ -43,24 +43,24 @@ export async function scrapeParndorfHours(): Promise<ScrapedData> {
         if (text && !text.includes('Öffnungszeiten') && text.length > 5) {
           const lines = text.split('\n').filter(line => line.trim());
           
-          // Обрабатываем случай, когда в одной строке есть несколько дней
+          // Handle case when one row contains multiple days
           if (lines.length >= 2) {
             const firstLine = lines[0].trim();
             const secondLine = lines[1].trim();
             
-            // Проверяем, содержит ли массив строк несколько дней в одной строке
+            // Check if array of lines contains multiple days in one row
             if (lines.length >= 4 && firstLine.includes('Montag – Donnerstag') && lines[1].includes('Freitag')) {
-              // Специальный случай: в первой строке два дня, во второй - два времени
+              // Special case: first row has two days, second has two times
               const day1 = lines[0].trim(); // "Montag – Donnerstag"
               const day2 = lines[1].trim(); // "Freitag"
               const time1 = lines[2].trim(); // "9:30-19:00 Uhr"
               const time2 = lines[3].trim(); // "9:30-20:00 Uhr"
               
-              // Добавляем обе пары
+              // Add both pairs
               openingHours.push({ day: day1, hours: time1 });
               openingHours.push({ day: day2, hours: time2 });
             } else {
-              // Обычный случай - одна пара день-время
+              // Normal case - one day-time pair
               const day = firstLine;
               const hours = secondLine;
               
@@ -73,7 +73,7 @@ export async function scrapeParndorfHours(): Promise<ScrapedData> {
       }
     }
 
-    // Если не нашли в таблице, ищем в других элементах
+    // If not found in table, search in other elements
     if (openingHours.length === 0) {
       $('*').each((i, element) => {
         const text = $(element).text();
@@ -95,7 +95,7 @@ export async function scrapeParndorfHours(): Promise<ScrapedData> {
       });
     }
 
-    // Если все еще не нашли, используем данные по умолчанию из сайта
+    // If still not found, use default data from site
     if (openingHours.length === 0) {
       openingHours.push(
         { day: "Montag – Donnerstag", hours: "9:30 – 19:00 Uhr" },
@@ -105,7 +105,7 @@ export async function scrapeParndorfHours(): Promise<ScrapedData> {
       );
     }
 
-    // Удаляем дубликаты по дню недели
+    // Remove duplicates by day of week
     const uniqueHours = openingHours.filter((item, index, self) => 
       index === self.findIndex(t => t.day === item.day)
     );
@@ -117,7 +117,7 @@ export async function scrapeParndorfHours(): Promise<ScrapedData> {
   } catch (error) {
     console.error('Error scraping Parndorf hours:', error);
     
-    // Возвращаем данные по умолчанию в случае ошибки
+    // Return default data in case of error
     return {
       openingHours: [
         { day: "Montag – Donnerstag", hours: "9:30 – 19:00 Uhr" },

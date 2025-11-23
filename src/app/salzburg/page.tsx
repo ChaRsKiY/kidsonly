@@ -2,10 +2,10 @@ import { Metadata } from "next";
 import { BranchPage } from "@/components/BranchPage";
 
 export const metadata: Metadata = {
-  title: "Kids Only Salzburg - Designer Outlet Salzburg | Kinderbekleidung zu Outlet-Preisen",
-  description: "Besuchen Sie Kids Only im Designer Outlet Salzburg. Qualitativ hochwertige Kinderbekleidung zu Outlet-Preisen. Markenkleidung für Babys, Kleinkinder und Teenager. Öffnungszeiten, Adresse und Kontaktinformationen.",
+  title: "kids only Salzburg - Designer Outlet Salzburg | Kinderbekleidung zu Outlet-Preisen",
+  description: "Besuchen Sie kids only im Designer Outlet Salzburg. Qualitativ hochwertige Kinderbekleidung zu Outlet-Preisen. Markenkleidung für Babys, Kleinkinder und Teenager. Öffnungszeiten, Adresse und Kontaktinformationen.",
   keywords: [
-    "Kids Only Salzburg",
+    "kids only Salzburg",
     "Designer Outlet Salzburg",
     "Kinderbekleidung Salzburg",
     "Outlet Salzburg",
@@ -17,10 +17,10 @@ export const metadata: Metadata = {
     "günstige Kinderkleidung Salzburg",
   ],
   openGraph: {
-    title: "Kids Only Salzburg - Designer Outlet Salzburg",
-    description: "Kids Only im Designer Outlet Salzburg bietet qualitativ hochwertige Kinderbekleidung zu Outlet-Preisen. Große Auswahl an Markenkleidung für alle Altersgruppen.",
+    title: "kids only Salzburg - Designer Outlet Salzburg",
+    description: "kids only im Designer Outlet Salzburg bietet qualitativ hochwertige Kinderbekleidung zu Outlet-Preisen. Große Auswahl an Markenkleidung für alle Altersgruppen.",
     url: "https://kidsonly.at/salzburg",
-    siteName: "Kids Only",
+    siteName: "kids only",
     locale: "de_AT",
     type: "website",
     images: [
@@ -28,14 +28,14 @@ export const metadata: Metadata = {
         url: "https://kidsonly.at/salzburg/cover.JPG",
         width: 1200,
         height: 630,
-        alt: "Kids Only Salzburg - Designer Outlet Salzburg",
+        alt: "kids only Salzburg - Designer Outlet Salzburg",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kids Only Salzburg - Designer Outlet Salzburg",
-    description: "Kids Only im Designer Outlet Salzburg - Kinderbekleidung zu Outlet-Preisen.",
+    title: "kids only Salzburg - Designer Outlet Salzburg",
+    description: "kids only im Designer Outlet Salzburg - Kinderbekleidung zu Outlet-Preisen.",
     images: ["https://kidsonly.at/salzburg/cover.JPG"],
   },
   alternates: {
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
 };
 
 const salzburgData = {
-  name: "Kids Only Salzburg",
+  name: "kids only Salzburg",
   address: "Designer Outlet Salzburg",
   city: "5073 Himmelreich, Austria",
   phone: "+43 664 1549660",
@@ -72,25 +72,34 @@ const salzburgData = {
     "Lego"
   ],
   images: {
-    hero: "/salzburg/cover.JPG",
-    interior: "/salzburg/img2.jpeg",
-    display: "/salzburg/img3.jpeg",
+    hero: "/salzburg/cover.png",
+    interior: "/salzburg/img2.png",
+    display: "/salzburg/img3.png",
     centerPlan: "/salzburg/kidsonly_plan_salzburg.png"
   }
 };
 
 export default async function SalzburgPage() {
-  let openingHours = [];
+  let openingHours: { day: string; hours: string }[] = [];
 
   try {
-    const response = await fetch(`https://kidsonly.vercel.app/api/salzburg/hours`);
-    const data = await response.json();
+    //const response = await fetch(`https://kidsonly.vercel.app/api/salzburg/hours`);
+    //const data = await response.json();
 
-    if (data.success && data.data && data.data.openingHours) {
-      openingHours = data.data.openingHours;
-    } else {
-      openingHours = [];
-    }
+    //if (data.success && data.data && data.data.openingHours) {
+    //  openingHours = data.data.openingHours;
+    //} else {
+    //  openingHours = [];
+    //}
+    openingHours = [
+      { day: "Montag", hours: "09:00 - 19:00 Uhr" },
+      { day: "Dienstag", hours: "09:00 - 19:00 Uhr" },
+      { day: "Mittwoch", hours: "09:00 - 19:00 Uhr" },
+      { day: "Donnerstag", hours: "09:00 - 19:00 Uhr" },
+      { day: "Freitag", hours: "09:00 - 19:00 Uhr" },
+      { day: "Samstag", hours: "09:00 - 19:00 Uhr" },
+      { day: "Sonn- und Feiertage", hours: "Geschlossen" },
+    ];
   } catch (error) {
     openingHours = [];
   }
@@ -184,8 +193,8 @@ export default async function SalzburgPage() {
   const storeJsonLd = {
     "@context": "https://schema.org",
     "@type": "Store",
-    "name": "Kids Only Salzburg",
-    "description": "Kids Only im Designer Outlet Salzburg bietet qualitativ hochwertige Kinderbekleidung zu Outlet-Preisen.",
+    "name": "kids only Salzburg",
+    "description": "kids only im Designer Outlet Salzburg bietet qualitativ hochwertige Kinderbekleidung zu Outlet-Preisen.",
     "url": "https://kidsonly.at/salzburg",
     "image": "https://kidsonly.at/salzburg/cover.JPG",
     "priceRange": "€€",
@@ -206,7 +215,7 @@ export default async function SalzburgPage() {
     "openingHoursSpecification": parseOpeningHours(openingHours),
     "brand": {
       "@type": "Brand",
-      "name": "Kids Only",
+      "name": "kids only",
     },
   };
 

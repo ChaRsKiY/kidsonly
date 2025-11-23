@@ -1,23 +1,23 @@
 import { scrapeParndorfHours } from './scraper';
 import cron from 'node-cron';
 
-// Кэш для хранения данных
+// Cache for storing data
 let cachedHours: any = null;
 let lastUpdate: Date | null = null;
 
 export function startScheduler() {
-  // Запускаем скрапинг при старте приложения
+  // Start scraping on application startup
   console.log('Starting initial Parndorf hours scraping...');
   updateHoursData().then(() => {
     console.log('Initial data loading completed');
   });
 
-  // Настраиваем крон-джоб для ежедневного обновления в 9:00 утра
+  // Setup cron job for daily update at 9:00 AM
   cron.schedule('0 9 * * *', () => {
     console.log('Running scheduled Parndorf hours update at 9:00 AM...');
     updateHoursData();
   }, {
-    timezone: "Europe/Vienna" // Время по Вене
+    timezone: "Europe/Vienna" // Vienna time
   });
 
   console.log('Cron job scheduled for daily updates at 9:00 AM Vienna time');
@@ -57,5 +57,5 @@ export function isDataFresh(): boolean {
   if (!lastUpdate) return false;
   const now = new Date();
   const diffInHours = (now.getTime() - lastUpdate.getTime()) / (1000 * 60 * 60);
-  return diffInHours < 24; // Данные считаются свежими если им меньше 24 часов
+  return diffInHours < 24; // Data is considered fresh if less than 24 hours old
 }

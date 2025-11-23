@@ -5,8 +5,8 @@ import { MotionDiv } from "@/components/motion";
 import { Home, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "404 - Seite nicht gefunden | Kids Only",
-  description: "Die angeforderte Seite konnte nicht gefunden werden. Zurück zur Startseite von Kids Only.",
+  title: "404 - Seite nicht gefunden | kids only",
+  description: "Die angeforderte Seite konnte nicht gefunden werden. Zurück zur Startseite von kids only.",
   robots: {
     index: false,
     follow: true,

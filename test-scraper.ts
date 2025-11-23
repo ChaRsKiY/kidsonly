@@ -1,4 +1,4 @@
-// Тестовый скрипт для проверки работы скрапера
+// Test script for scraper testing
 import { scrapeParndorfHours } from './src/lib/scraper';
 
 async function testScraper() {

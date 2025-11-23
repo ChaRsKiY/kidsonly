@@ -1,29 +1,29 @@
-# Cron Job Setup для Parndorf Hours
+# Cron Job Setup for Parndorf Hours
 
-## Обзор
+## Overview
 
-Система автоматически обновляет данные о часах работы Parndorf каждый день в 9:00 утра по венскому времени с помощью крон-джобов.
+The system automatically updates Parndorf opening hours data every day at 9:00 AM Vienna time using cron jobs.
 
-## Как это работает
+## How It Works
 
-### 1. Автоматическое обновление
-- **Расписание**: Каждый день в 9:00 AM (Europe/Vienna timezone)
-- **Источник данных**: Сайт parndorffashionoutlet.com
-- **Кэширование**: Данные сохраняются в памяти приложения
+### 1. Automatic Update
+- **Schedule**: Every day at 9:00 AM (Europe/Vienna timezone)
+- **Data Source**: parndorffashionoutlet.com website
+- **Caching**: Data is stored in application memory
 
 ### 2. API Endpoints
 
 #### GET `/api/parndorf/hours`
-- Возвращает кэшированные данные
-- Не выполняет скрапинг в реальном времени
-- Быстрый ответ
+- Returns cached data
+- Does not perform real-time scraping
+- Fast response
 
 #### POST `/api/parndorf/hours`
-- Принудительное обновление данных
-- Очищает кэш и получает свежие данные
-- Используется только для тестирования
+- Force data update
+- Clears cache and fetches fresh data
+- Used only for testing
 
-### 3. Структура данных
+### 3. Data Structure
 
 ```json
 {
@@ -54,21 +54,21 @@
 }
 ```
 
-## Тестирование
+## Testing
 
-### 1. Тестовая страница
-Перейдите на `/test-api` для интерактивного тестирования:
-- Получение кэшированных данных (GET)
-- Принудительное обновление (POST)
+### 1. Test Page
+Navigate to `/test-api` for interactive testing:
+- Get cached data (GET)
+- Force update (POST)
 
-### 2. Тест крон-джоба
+### 2. Test Cron Job
 ```bash
 npm run test-cron
 ```
-Запускает тестовый крон-джоб каждые 10 секунд.
+Runs a test cron job every 10 seconds.
 
-### 3. Логи
-Крон-джоб выводит логи в консоль:
+### 3. Logs
+The cron job outputs logs to the console:
 ```
 Starting initial Parndorf hours scraping...
 Cron job scheduled for daily updates at 9:00 AM Vienna time
@@ -76,32 +76,32 @@ Running scheduled Parndorf hours update at 9:00 AM...
 Parndorf hours updated successfully: {...}
 ```
 
-## Преимущества
+## Benefits
 
-1. **Производительность**: API отвечает мгновенно, используя кэшированные данные
-2. **Надежность**: Данные обновляются автоматически без вмешательства человека
-3. **Экономия ресурсов**: Скрапинг выполняется только раз в день
-4. **Время**: Обновление в 9:00 утра, когда сайт обычно стабилен
+1. **Performance**: API responds instantly using cached data
+2. **Reliability**: Data updates automatically without human intervention
+3. **Resource Efficiency**: Scraping is performed only once per day
+4. **Timing**: Update at 9:00 AM when the site is usually stable
 
-## Мониторинг
+## Monitoring
 
-Для мониторинга работы крон-джоба проверяйте:
-- Логи приложения
-- Время последнего обновления в API ответе
-- Статус кэша через `/test-api`
+To monitor the cron job, check:
+- Application logs
+- Last update time in API response
+- Cache status via `/test-api`
 
-## Настройка расписания
+## Schedule Configuration
 
-Для изменения расписания отредактируйте файл `src/lib/scheduler.ts`:
+To change the schedule, edit the file `src/lib/scheduler.ts`:
 
 ```typescript
-// Текущее расписание: каждый день в 9:00 AM
+// Current schedule: every day at 9:00 AM
 cron.schedule('0 9 * * *', () => {
   // ...
 });
 
-// Примеры других расписаний:
-// '0 */6 * * *' - каждые 6 часов
-// '0 9 * * 1-5' - только в рабочие дни в 9:00 AM
-// '0 9,15 * * *' - в 9:00 AM и 3:00 PM
+// Examples of other schedules:
+// '0 */6 * * *' - every 6 hours
+// '0 9 * * 1-5' - only on weekdays at 9:00 AM
+// '0 9,15 * * *' - at 9:00 AM and 3:00 PM
 ```

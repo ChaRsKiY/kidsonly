@@ -21,7 +21,7 @@ export function HomePage() {
       {/* Hero Section */}
       <section className="h-screen flex items-center justify-center overflow-hidden z-10 relative" aria-label="Hero-Bereich">
         <ImageWithFallback
-          src="/hero_bg.jpg"
+          src="/hero_bg.png"
           alt="Hero Background Image"
           className="object-cover opacity-30"
           fill
@@ -30,18 +30,19 @@ export function HomePage() {
         <div className="relative z-20 text-center px-6 max-w-4xl mx-auto">
           <MotionDiv
             initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
           >
             <ImageWithFallback
               src="/kids_only_logo.svg"
-              alt="Kids Only Logo - Kinderbekleidung zu Outlet-Preisen"
+              alt="kids only Logo - Kinderbekleidung zu Outlet-Preisen"
               className="w-96 h-auto mx-auto mb-8 max-md:w-64"
               width={512}
               height={512}
               priority
             />
-            <p className="text-xl mb-8 max-w-2xl mx-auto max-sm:text-base font-bold text-muted-foreground dark:text-zinc-100" itemProp="slogan">
+            <p className="text-xl mb-8 max-w-2xl mx-auto max-sm:text-base text-muted-foreground dark:text-zinc-100" itemProp="slogan">
                Markenkleidung zu Outlet-Preisen
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -72,39 +73,45 @@ export function HomePage() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
           className="max-w-3xl mx-auto text-center mb-16"
         >
           <h1 className="text-4xl md:text-5xl text-zinc-900 dark:text-zinc-100 mb-6">Über uns</h1>
           <p className="text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed mb-6">
-            Kids Only bietet eine Shopping-Welt führender Kinderbekleidungshersteller von Lifestyle-Marken, vereint in einem Geschäft. 
+            kids only bietet eine Shopping-Welt führender Kinderbekleidungshersteller von Lifestyle-Marken, vereint in einem Geschäft. 
             Der Fokus reicht von Babys über Kleinkinder bis hin zu Teenagern, für die separate Erlebniswelten geschaffen wurden. 
             Mit einer breiten Auswahl ist jede Preisklasse vertreten. Freundliches und qualifiziertes Fachpersonal steht immer für hochwertige Beratung zur Verfügung.
           </p>
           <p className="text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed">
-            Wir bei Kids Only möchten, dass sich Ihre Kinder in ihrer Kleidung wohlfühlen und gleichzeitig gut aussehen. 
+            Wir bei kids only möchten, dass sich Ihre Kinder in ihrer Kleidung wohlfühlen und gleichzeitig gut aussehen. 
             Unser Sortiment besteht aus hochwertigen Marken zu Outlet-Preisen. Bei uns finden Sie Kleidung für jeden Anlass, 
             ob Taufe, Alltag oder Skiurlaub! Unsere Mission ist es, Ihnen und Ihren Kindern das bestmögliche Einkaufserlebnis zu bieten. Mode soll Spaß machen!
           </p>
         </MotionDiv>
 
         {/* Store Locations */}
-        <div className="grid md:grid-cols-2 gap-8 mb-20">
+        <MotionDiv
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="grid md:grid-cols-2 gap-8 mb-20"
+        >
           <StoreCard
             title="Parndorf"
             description="Unser Flagship-Store im renommierten Fashion Outlet Parndorf bietet eine umfangreiche Auswahl an Premium-Kinderbekleidung in einer geräumigen, modernen Umgebung."
-            image="/parndorf/cover.jpg"
+            image="/parndorf/cover.png"
             location="Fashion Outlet Parndorf"
             href="/parndorf"
           />
           <StoreCard
             title="Salzburg"
             description="Unser Geschäft im Designer Outlet Salzburg verbindet den Charme der alten Welt mit zeitgenössischer Eleganz und schafft eine einzigartige Einkaufsatmosphäre."
-            image="/salzburg/cover.JPG"
+            image="/salzburg/cover.png"
             location="Designer Outlet Salzburg"
             href="/salzburg"
           />
-        </div>
+        </MotionDiv>
       </section>
 
       {/* Featured Brands */}
@@ -114,7 +121,7 @@ export function HomePage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
             className="text-center mb-12"
           >
             <h2 className="text-4xl md:text-5xl text-zinc-900 dark:text-zinc-100 mb-4" id="top-marken">Unsere Top-Marken</h2>
@@ -127,7 +134,7 @@ export function HomePage() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
             className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto"
           >
             {brands.map((brand, index) => (
@@ -136,7 +143,7 @@ export function HomePage() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.2 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
                 whileHover={{ y: -5, border: "1px solid hsl(var(--primary))" }}
                 className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-lg p-6 text-center transition-all"
               >
@@ -153,8 +160,8 @@ export function HomePage() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="bg-linear-to-br from-primary to-secondary rounded-2xl p-12 md:p-16 text-center"
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="bg-linear-to-br from-primary to-secondary rounded-2xl p-8 md:p-16 text-center"
         >
           <h2 className="text-4xl md:text-5xl text-white mb-4" id="kollektionen">Unsere Kollektionen für Kinder</h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto max-sm:text-base">
@@ -210,12 +217,12 @@ function StoreCard({
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.6 }}
+      transition={{ duration: 0.8, delay: 0.2 }}
       className="group cursor-pointer"
     >
       <Link href={href}>
         <div className="relative h-80 rounded-xl overflow-hidden mb-4">
-          <div className="absolute inset-0 bg-linear-to-t from-zinc-950 via-zinc-950/50 to-transparent z-10" />
+          <div className="absolute inset-0 bg-linear-to-t from-zinc-950 via-zinc-950/40 to-transparent z-10" />
           <ImageWithFallback
             src={image}
             alt={`${title} - ${location} - Kinderbekleidung zu Outlet-Preisen`}

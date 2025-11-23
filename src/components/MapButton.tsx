@@ -12,7 +12,7 @@ export function MapButton({ mapLink }: MapButtonProps) {
     <Button
       onClick={() => window.open(mapLink, '_blank')}
       variant="outline"
-      className="w-full mt-6"
+      className="w-full mt-6 border-accent"
     >
       <ExternalLink className="mr-2 w-4 h-4" />
       In Karten öffnen

@@ -1,9 +1,9 @@
-// Тестовый скрипт для проверки API с принудительным обновлением
+// Test script for API testing with forced update
 async function testAPI() {
   try {
     console.log('Testing Parndorf hours API with force update...');
     
-    // Принудительное обновление данных
+    // Force data update
     const response = await fetch('http://localhost:3000/api/parndorf/hours', {
       method: 'POST',
       headers: {

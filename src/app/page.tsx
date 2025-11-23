@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import { HomePage } from "@/components/HomePage";
 
 export const metadata: Metadata = {
-  title: "Kids Only - Kinderbekleidung zu Outlet-Preisen | Parndorf & Salzburg",
-  description: "Kids Only bietet qualitativ hochwertige Kinderbekleidung zu Outlet-Preisen. Besuchen Sie unsere Filialen im Fashion Outlet Parndorf und Designer Outlet Salzburg. Große Auswahl an Markenkleidung für Babys, Kleinkinder und Teenager.",
+  title: "kids only - Kinderbekleidung zu Outlet-Preisen | Parndorf & Salzburg",
+  description: "kids only bietet qualitativ hochwertige Kinderbekleidung zu Outlet-Preisen. Besuchen Sie unsere Filialen im Fashion Outlet Parndorf und Designer Outlet Salzburg. Große Auswahl an Markenkleidung für Babys, Kleinkinder und Teenager.",
   keywords: [
     "Kinderbekleidung",
     "Kinderkleidung",
@@ -22,10 +22,10 @@ export const metadata: Metadata = {
     "günstige Kinderkleidung",
   ],
   openGraph: {
-    title: "Kids Only - Kinderbekleidung zu Outlet-Preisen | Parndorf & Salzburg",
-    description: "Kids Only bietet qualitativ hochwertige Kinderbekleidung zu Outlet-Preisen. Besuchen Sie unsere Filialen im Fashion Outlet Parndorf und Designer Outlet Salzburg.",
+    title: "kids only - Kinderbekleidung zu Outlet-Preisen | Parndorf & Salzburg",
+    description: "kids only bietet qualitativ hochwertige Kinderbekleidung zu Outlet-Preisen. Besuchen Sie unsere Filialen im Fashion Outlet Parndorf und Designer Outlet Salzburg.",
     url: "https://kidsonly.at",
-    siteName: "Kids Only",
+    siteName: "kids only",
     locale: "de_AT",
     type: "website",
     images: [
@@ -33,14 +33,14 @@ export const metadata: Metadata = {
         url: "https://kidsonly.at/logo.png",
         width: 1200,
         height: 630,
-        alt: "Kids Only - Kinderbekleidung zu Outlet-Preisen",
+        alt: "kids only - Kinderbekleidung zu Outlet-Preisen",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kids Only - Kinderbekleidung zu Outlet-Preisen",
-    description: "Kids Only bietet qualitativ hochwertige Kinderbekleidung zu Outlet-Preisen in Parndorf und Salzburg.",
+    title: "kids only - Kinderbekleidung zu Outlet-Preisen",
+    description: "kids only bietet qualitativ hochwertige Kinderbekleidung zu Outlet-Preisen in Parndorf und Salzburg.",
     images: ["https://kidsonly.at/logo.png"],
   },
   alternates: {
@@ -52,8 +52,8 @@ export default function Home() {
   const organizationJsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Kids Only",
-    "description": "Kids Only bietet qualitativ hochwertige Kinderbekleidung zu Outlet-Preisen in Parndorf und Salzburg.",
+    "name": "kids only",
+    "description": "kids only bietet qualitativ hochwertige Kinderbekleidung zu Outlet-Preisen in Parndorf und Salzburg.",
     "url": "https://kidsonly.at",
     "logo": "https://kidsonly.at/logo.png",
     "image": "https://kidsonly.at/logo.png",
@@ -89,7 +89,7 @@ export default function Home() {
   const websiteJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Kids Only",
+    "name": "kids only",
     "url": "https://kidsonly.at",
     "potentialAction": {
       "@type": "SearchAction",

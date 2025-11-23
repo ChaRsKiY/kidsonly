@@ -59,8 +59,9 @@ export function BranchPage({ branch, openingHours }: BranchPageProps) {
         <div className="relative z-20 container mx-auto px-6 pb-16">
           <MotionDiv
             initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
           >
             <div className="flex items-center gap-2 mb-4" itemScope itemType="https://schema.org/PostalAddress">
               <MapPin className="w-5 h-5" aria-hidden="true" />
@@ -83,7 +84,7 @@ export function BranchPage({ branch, openingHours }: BranchPageProps) {
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
             className="h-full"
           >
             <Card className="bg-zinc-50 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 p-8 h-full flex flex-col justify-between" itemScope itemType="https://schema.org/PostalAddress">
@@ -120,7 +121,7 @@ export function BranchPage({ branch, openingHours }: BranchPageProps) {
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
             className="h-full"
           >
             <Card className="bg-zinc-50 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 p-8 h-full" itemScope itemType="https://schema.org/OpeningHoursSpecification">
@@ -153,7 +154,7 @@ export function BranchPage({ branch, openingHours }: BranchPageProps) {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
           className="mb-16"
         >
           <h2 className="text-3xl text-zinc-900 dark:text-zinc-100 mb-6">Verfügbare Marken</h2>
@@ -164,7 +165,7 @@ export function BranchPage({ branch, openingHours }: BranchPageProps) {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: index * 0.1 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
                 whileHover={{ y: -5, scale: 1.02 }}
                 className="bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-lg p-6 text-center hover:border-primary transition-all cursor-pointer"
               >
@@ -179,7 +180,7 @@ export function BranchPage({ branch, openingHours }: BranchPageProps) {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
           className="mb-16"
         >
           <h2 className="text-3xl text-zinc-900 dark:text-zinc-100 mb-6">Geschäftsgalerie</h2>
@@ -253,7 +254,7 @@ export function BranchPage({ branch, openingHours }: BranchPageProps) {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
         >
           <h2 className="text-3xl text-zinc-900 dark:text-zinc-100 mb-6">Geschäftsmerkmale</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">

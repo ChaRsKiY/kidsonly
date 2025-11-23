@@ -2,9 +2,9 @@ import { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Kids Only - Kinderbekleidung zu Outlet-Preisen',
-    short_name: 'Kids Only',
-    description: 'Kids Only bietet qualitativ hochwertige Kinderbekleidung zu Outlet-Preisen. Besuchen Sie unsere Filialen in Parndorf und Salzburg für die besten Marken zu erschwinglichen Preisen.',
+    name: 'kids only - Kinderbekleidung zu Outlet-Preisen',
+    short_name: 'kids only',
+    description: 'kids only bietet qualitativ hochwertige Kinderbekleidung zu Outlet-Preisen. Besuchen Sie unsere Filialen in Parndorf und Salzburg für die besten Marken zu erschwinglichen Preisen.',
     start_url: '/',
     display: 'standalone',
     background_color: '#ffffff',

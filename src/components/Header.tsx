@@ -23,7 +23,7 @@ export function Header() {
             whileTap={{ scale: 0.98 }}
           >
             <Link href="/" className="flex flex-col items-start">
-              <Image src="/kids_only_logo.svg" alt="Kids Only" width={120} height={120} />
+              <Image src="/kids_only_logo.svg" alt="kids only" width={120} height={120} />
             </Link>
           </motion.div>
 

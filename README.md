@@ -1,6 +1,6 @@
-# Kids Only - Children's Fashion Website
+# kids only - Children's Fashion Website
 
-A modern Next.js website for Kids Only children's clothing store, featuring two locations in Parndorf and Salzburg, Austria.
+A modern Next.js website for kids only children's clothing store, featuring two locations in Parndorf and Salzburg, Austria.
 
 ## Features
 
@@ -90,4 +90,4 @@ npm run build
 
 ## License
 
-© 2025 Kids Only. All rights reserved.
+© 2025 kids only. All rights reserved.

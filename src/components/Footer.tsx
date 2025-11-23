@@ -8,7 +8,7 @@ export function Footer() {
   return (
     <footer className="bg-background dark:bg-background mt-20 border-t border-border dark:border-border/20 transition-colors">
       <div className="container mx-auto px-6 py-12 max-md:px-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 place-items-center items-start max-md:place-items-start mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 place-items-center items-start max-md:place-items-start mb-12">
           <div>
             <h3 className="text-zinc-900 dark:text-zinc-100 mb-4">Filiale Parndorf</h3>
             <div className="space-y-3 text-sm text-zinc-600 dark:text-zinc-400">

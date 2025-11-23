@@ -1,12 +1,12 @@
 # Vercel Cron Job Setup
 
-## Обзор
+## Overview
 
-Настроен автоматический cron job через Vercel для ежедневного обновления часов работы обоих филиалов (Parndorf и Salzburg) каждый день в 9:00 утра по венскому времени.
+An automatic cron job is configured via Vercel for daily updates of opening hours for both branches (Parndorf and Salzburg) every day at 9:00 AM Vienna time.
 
-## Конфигурация
+## Configuration
 
-### 1. Файл `vercel.json`
+### 1. `vercel.json` File
 
 ```json
 {
@@ -19,81 +19,81 @@
 }
 ```
 
-**Расписание:**
-- `"0 7 * * *"` - каждый день в 7:00 UTC
-- Это соответствует 8:00 Vienna (CET, зимнее время) или 9:00 Vienna (CEST, летнее время)
-- В большинстве случаев это будет примерно 9:00 утра по Vienna времени
+**Schedule:**
+- `"0 7 * * *"` - every day at 7:00 UTC
+- This corresponds to 8:00 Vienna (CET, winter time) or 9:00 Vienna (CEST, summer time)
+- In most cases, this will be approximately 9:00 AM Vienna time
 
-**Примечание:** Vercel использует UTC время для cron jobs. Vienna находится в часовом поясе UTC+1 (зимой) или UTC+2 (летом). Использование 7:00 UTC обеспечивает обновление примерно в 8:00-9:00 Vienna времени в зависимости от сезона.
+**Note:** Vercel uses UTC time for cron jobs. Vienna is in timezone UTC+1 (winter) or UTC+2 (summer). Using 7:00 UTC ensures updates at approximately 8:00-9:00 Vienna time depending on the season.
 
 ### 2. API Endpoint
 
-**Путь:** `/api/cron/update-hours`
+**Path:** `/api/cron/update-hours`
 
-**Метод:** GET
+**Method:** GET
 
-**Функциональность:**
-1. Проверяет авторизацию через заголовок `x-vercel-cron` (автоматически добавляется Vercel)
-2. Вызывает парсинг часов работы для Parndorf (`/api/parndorf/hours`)
-3. Вызывает парсинг часов работы для Salzburg (`/api/salzburg/hours`)
-4. Выполняет revalidate страниц `/parndorf` и `/salzburg` для обновления кеша Next.js
-5. Возвращает детальный отчет о выполнении
+**Functionality:**
+1. Checks authorization via `x-vercel-cron` header (automatically added by Vercel)
+2. Calls opening hours parsing for Parndorf (`/api/parndorf/hours`)
+3. Calls opening hours parsing for Salzburg (`/api/salzburg/hours`)
+4. Performs revalidate of `/parndorf` and `/salzburg` pages to update Next.js cache
+5. Returns detailed execution report
 
-**Безопасность:**
-- В production проверяет заголовок `x-vercel-cron` (автоматически добавляется Vercel)
-- Опционально можно установить переменную окружения `CRON_SECRET` для дополнительной защиты
-- В development режиме проверка авторизации менее строгая для тестирования
+**Security:**
+- In production, checks `x-vercel-cron` header (automatically added by Vercel)
+- Optionally, you can set the `CRON_SECRET` environment variable for additional protection
+- In development mode, authorization check is less strict for testing
 
-## Установка на Vercel
+## Vercel Setup
 
-### 1. Автоматическая настройка
+### 1. Automatic Configuration
 
-После деплоя на Vercel, cron job автоматически активируется благодаря файлу `vercel.json`.
+After deploying to Vercel, the cron job is automatically activated thanks to the `vercel.json` file.
 
-### 2. Проверка настройки
+### 2. Configuration Check
 
-1. Перейдите в Vercel Dashboard
-2. Выберите ваш проект
-3. Откройте вкладку "Cron Jobs"
-4. Убедитесь, что cron job "update-hours" активен и запланирован
+1. Go to Vercel Dashboard
+2. Select your project
+3. Open the "Cron Jobs" tab
+4. Ensure the "update-hours" cron job is active and scheduled
 
-### 3. Мониторинг
+### 3. Monitoring
 
-**Логи:**
-- Все логи cron job доступны в Vercel Dashboard → Functions → Logs
-- Ищите записи с префиксом "Starting scheduled update of opening hours..."
+**Logs:**
+- All cron job logs are available in Vercel Dashboard → Functions → Logs
+- Look for entries with prefix "Starting scheduled update of opening hours..."
 
-**Проверка выполнения:**
-- Перейдите на `/api/cron/update-hours` в браузере (только для проверки в development)
-- Проверьте логи в Vercel Dashboard
-- Проверьте время последнего обновления через `/api/parndorf/hours` и `/api/salzburg/hours`
+**Execution Check:**
+- Navigate to `/api/cron/update-hours` in browser (only for development testing)
+- Check logs in Vercel Dashboard
+- Check last update time via `/api/parndorf/hours` and `/api/salzburg/hours`
 
-## Тестирование
+## Testing
 
-### Локальное тестирование
+### Local Testing
 
-Для тестирования cron job локально:
+To test the cron job locally:
 
 ```bash
-# Запустите dev сервер
+# Start dev server
 npm run dev
 
-# В другом терминале вызовите endpoint
+# In another terminal, call the endpoint
 curl http://localhost:3000/api/cron/update-hours
 ```
 
-**Примечание:** В development режиме проверка авторизации менее строгая, поэтому endpoint будет работать.
+**Note:** In development mode, authorization check is less strict, so the endpoint will work.
 
-### Тестирование на Vercel
+### Testing on Vercel
 
-1. Деплой проекта на Vercel
-2. Перейдите в Vercel Dashboard → Cron Jobs
-3. Найдите ваш cron job и нажмите "Run Now" для ручного запуска
-4. Проверьте логи выполнения
+1. Deploy the project to Vercel
+2. Go to Vercel Dashboard → Cron Jobs
+3. Find your cron job and click "Run Now" for manual execution
+4. Check execution logs
 
-## Ответ API
+## API Response
 
-**Успешный ответ:**
+**Success Response:**
 ```json
 {
   "success": true,
@@ -113,7 +113,7 @@ curl http://localhost:3000/api/cron/update-hours
 }
 ```
 
-**Ответ с ошибками:**
+**Error Response:**
 ```json
 {
   "success": false,
@@ -133,67 +133,66 @@ curl http://localhost:3000/api/cron/update-hours
 }
 ```
 
-## Настройка времени
+## Time Configuration
 
-Для изменения времени выполнения cron job отредактируйте файл `vercel.json`:
+To change the cron job execution time, edit the `vercel.json` file:
 
 ```json
 {
   "crons": [
     {
       "path": "/api/cron/update-hours",
-      "schedule": "0 8 * * *"  // 8:00 UTC = 9:00 Vienna (зимой) или 10:00 Vienna (летом)
+      "schedule": "0 8 * * *"  // 8:00 UTC = 9:00 Vienna (winter) or 10:00 Vienna (summer)
     }
   ]
 }
 ```
 
-**Формат cron выражения:**
-- `"0 7 * * *"` - каждый день в 7:00 UTC
-- `"0 8 * * *"` - каждый день в 8:00 UTC
-- `"0 9 * * 1-5"` - только в рабочие дни (понедельник-пятница) в 9:00 UTC
-- `"0 */6 * * *"` - каждые 6 часов
+**Cron Expression Format:**
+- `"0 7 * * *"` - every day at 7:00 UTC
+- `"0 8 * * *"` - every day at 8:00 UTC
+- `"0 9 * * 1-5"` - only on weekdays (Monday-Friday) at 9:00 UTC
+- `"0 */6 * * *"` - every 6 hours
 
-## Переменные окружения (опционально)
+## Environment Variables (Optional)
 
-Для дополнительной безопасности можно установить переменную окружения:
+For additional security, you can set an environment variable:
 
-**`CRON_SECRET`** - секретный ключ для защиты cron endpoint
+**`CRON_SECRET`** - secret key for protecting the cron endpoint
 
-Если установлен, cron job будет требовать заголовок `Authorization: Bearer <CRON_SECRET>`.
+If set, the cron job will require the `Authorization: Bearer <CRON_SECRET>` header.
 
-**Установка в Vercel:**
+**Setup in Vercel:**
 1. Vercel Dashboard → Project → Settings → Environment Variables
-2. Добавьте `CRON_SECRET` с любым секретным значением
-3. Обновите деплой
+2. Add `CRON_SECRET` with any secret value
+3. Update deployment
 
 ## Troubleshooting
 
-### Cron job не выполняется
+### Cron Job Not Executing
 
-1. Проверьте, что файл `vercel.json` присутствует в корне проекта
-2. Убедитесь, что проект задеплоен на Vercel
-3. Проверьте логи в Vercel Dashboard
-4. Убедитесь, что endpoint `/api/cron/update-hours` доступен
+1. Check that `vercel.json` file is present in the project root
+2. Ensure the project is deployed to Vercel
+3. Check logs in Vercel Dashboard
+4. Ensure the `/api/cron/update-hours` endpoint is accessible
 
-### Timeout ошибки
+### Timeout Errors
 
-Если возникают timeout ошибки:
-- Увеличьте timeout в коде (текущие значения: 60s для Parndorf, 120s для Salzburg)
-- Проверьте, что внешние сайты доступны
-- Проверьте логи для детальной информации об ошибках
+If timeout errors occur:
+- Increase timeout in code (current values: 60s for Parndorf, 120s for Salzburg)
+- Check that external sites are accessible
+- Check logs for detailed error information
 
-### Ошибки авторизации
+### Authorization Errors
 
-- В production Vercel автоматически добавляет заголовок `x-vercel-cron`
-- Если используете `CRON_SECRET`, убедитесь, что он правильно установлен в переменных окружения
-- В development режиме проверка авторизации менее строгая
+- In production, Vercel automatically adds the `x-vercel-cron` header
+- If using `CRON_SECRET`, ensure it's correctly set in environment variables
+- In development mode, authorization check is less strict
 
-## Преимущества
+## Benefits
 
-1. **Автоматизация:** Не требует ручного вмешательства
-2. **Надежность:** Vercel гарантирует выполнение cron jobs
-3. **Мониторинг:** Легко отслеживать через Vercel Dashboard
-4. **Масштабируемость:** Работает автоматически при любом количестве деплоев
-5. **Логирование:** Все логи доступны в Vercel Dashboard
-
+1. **Automation:** No manual intervention required
+2. **Reliability:** Vercel guarantees cron job execution
+3. **Monitoring:** Easy to track via Vercel Dashboard
+4. **Scalability:** Works automatically with any number of deployments
+5. **Logging:** All logs available in Vercel Dashboard
