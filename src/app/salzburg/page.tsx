@@ -97,7 +97,7 @@ export default async function SalzburgPage() {
       { day: "Mittwoch", hours: "09:00 - 19:00 Uhr" },
       { day: "Donnerstag", hours: "09:00 - 19:00 Uhr" },
       { day: "Freitag", hours: "09:00 - 19:00 Uhr" },
-      { day: "Samstag", hours: "09:00 - 19:00 Uhr" },
+      { day: "Samstag", hours: "09:00 - 18:00 Uhr" },
       { day: "Sonn- und Feiertage", hours: "Geschlossen" },
     ];
   } catch (error) {

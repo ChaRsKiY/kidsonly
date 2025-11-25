@@ -106,7 +106,7 @@ export default async function ParndorfPage() {
           { day: "Mittwoch", hours: "9:00 – 19:30 Uhr" },
           { day: "Donnerstag", hours: "9:00 – 19:30 Uhr" },
           { day: "Freitag", hours: "9:00 – 21:00 Uhr" },
-          { day: "Samstag", hours: "9:00 – 19:00 Uhr" },
+          { day: "Samstag", hours: "9:00 – 18:00 Uhr" },
           { day: "Sonn- und Feiertage", hours: "Geschlossen" },
       ];
   } catch (error) {
