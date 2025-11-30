@@ -72,9 +72,9 @@ ${sitemapEntries.map((entry) => `  <url>
   </url>`).join('\n')}
 </urlset>`;
 
-    return new Response(sitemap, {
+    return new Response(sitemap.trim(), {
         headers: {
-            'Content-Type': 'application/xml',
+            'Content-Type': 'application/xml; charset=utf-8',
             'Cache-Control': 'public, max-age=3600, s-maxage=3600',
         },
     });
