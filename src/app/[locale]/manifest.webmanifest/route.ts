@@ -1,12 +1,26 @@
-import { MetadataRoute } from 'next';
+import { NextRequest, NextResponse } from 'next/server';
+import { getTranslations } from 'next-intl/server';
+import { locales, type Locale } from '@/i18n/routing';
 
-export default function manifest(): MetadataRoute.Manifest {
-    return {
-        name: 'kids only - Kinderbekleidung zu Outlet-Preisen',
-        short_name: 'kids only',
-        description: 'kids only bietet qualitativ hochwertige Kinderbekleidung zu Outlet-Preisen. Besuchen Sie unsere Filialen in Parndorf und Salzburg für die besten Marken zu erschwinglichen Preisen.',
-        start_url: '/de',
-        scope: '/de',
+export async function GET(
+    request: NextRequest,
+    { params }: { params: Promise<{ locale: string }> }
+) {
+    const { locale } = await params;
+
+    // Validate locale
+    if (!locales.includes(locale as Locale)) {
+        return new NextResponse('Not Found', { status: 404 });
+    }
+
+    const t = await getTranslations({ locale, namespace: 'manifest' });
+
+    const manifest = {
+        name: t('name'),
+        short_name: t('shortName'),
+        description: t('description'),
+        start_url: `/${locale}`,
+        scope: `/${locale}`,
         display: 'standalone',
         background_color: '#ffffff',
         theme_color: '#ffffff',
@@ -38,7 +52,14 @@ export default function manifest(): MetadataRoute.Manifest {
             },
         ],
         categories: ['shopping', 'fashion', 'children'],
-        lang: 'de',
+        lang: locale,
         dir: 'ltr',
     };
+
+    return NextResponse.json(manifest, {
+        headers: {
+            'Content-Type': 'application/manifest+json',
+            'Cache-Control': 'public, max-age=3600, s-maxage=3600',
+        },
+    });
 }

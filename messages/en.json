@@ -1,0 +1,433 @@
+{
+    "seo": {
+        "home": {
+            "title": "kids only - Children's Clothing at Outlet Prices | Parndorf & Salzburg",
+            "description": "kids only offers high-quality children's clothing at outlet prices. Visit our stores at Fashion Outlet Parndorf and Designer Outlet Salzburg.",
+            "ogTitle": "kids only - Premium Children's Clothing at Outlet Prices",
+            "ogDescription": "Discover high-quality children's fashion from top brands at unbeatable prices in Parndorf and Salzburg.",
+            "keywords": "children's clothing, kids clothing, outlet prices, Parndorf, Salzburg, Fashion Outlet, Designer Outlet, brand clothing, baby clothes, kids fashion, outlet store, affordable kids clothing, premium children's fashion, kids only"
+        },
+        "parndorf": {
+            "title": "kids only Parndorf - Fashion Outlet | Children's Clothing",
+            "description": "Visit kids only at Fashion Outlet Parndorf. Wide selection of children's clothing from top brands like Mayoral, Name It, Levi's, Tommy Hilfiger at outlet prices. Opening hours and contact.",
+            "ogTitle": "kids only Parndorf - Your Children's Clothing at Fashion Outlet",
+            "ogDescription": "Premium children's fashion at Fashion Outlet Parndorf. Top brands like Mayoral, Name It, Levi's, Tommy Hilfiger at best prices. Expert advice.",
+            "keywords": "kids only Parndorf, Fashion Outlet Parndorf, children's clothing Parndorf, Mayoral Parndorf, Name It Parndorf, Levi's Kids Parndorf, Tommy Hilfiger Kids Parndorf, outlet Parndorf, kids clothes Parndorf, brand clothing Parndorf, baby clothes Parndorf, outlet store Parndorf, children's clothing Burgenland, designer kids fashion Parndorf, affordable kids clothing Parndorf, Neusiedl am See, Eisenstadt"
+        },
+        "salzburg": {
+            "title": "kids only Salzburg - Designer Outlet | Children's Clothing",
+            "description": "Visit kids only at Designer Outlet Salzburg. High-quality children's clothing from leading brands like Mayoral, Name It, Levi's, Tommy Hilfiger at outlet prices. Opening hours and directions.",
+            "ogTitle": "kids only Salzburg - Children's Clothing at Designer Outlet",
+            "ogDescription": "Quality children's fashion at Designer Outlet Salzburg. Brands like Mayoral, Name It, Levi's, Tommy Hilfiger at attractive prices.",
+            "keywords": "kids only Salzburg, Designer Outlet Salzburg, children's clothing Salzburg, Mayoral Salzburg, Name It Salzburg, Levi's Kids Salzburg, Tommy Hilfiger Kids Salzburg, outlet Salzburg, kids clothes Salzburg, brand clothing Salzburg, baby clothes Salzburg, outlet store Salzburg, children's clothing Salzburg area, designer kids fashion Salzburg, affordable kids clothing Salzburg, Himmelreich, Wals-Siezenheim"
+        },
+        "impressum": {
+            "title": "Imprint | kids only",
+            "description": "Imprint and legal information from kids only for the locations Parndorf and Salzburg.",
+            "ogTitle": "Imprint - kids only",
+            "ogDescription": "Legal information and contact details of kids only."
+        },
+        "privacy": {
+            "title": "Privacy Policy | kids only",
+            "description": "Privacy policy of kids only. Information about the processing of personal data on our website.",
+            "ogTitle": "Privacy Policy - kids only",
+            "ogDescription": "Learn how we protect and process your personal data."
+        }
+    },
+    "manifest": {
+        "name": "kids only - Children's Clothing at Outlet Prices",
+        "shortName": "kids only",
+        "description": "kids only offers high-quality children's clothing at outlet prices. Visit our stores in Parndorf and Salzburg for the best brands at affordable prices."
+    },
+    "home": {
+        "title": "Home",
+        "description": "Welcome to the home page of kids only",
+        "hero": {
+            "altBackground": "Hero Background Image",
+            "altLogo": "kids only Logo - Children's clothing at outlet prices",
+            "slogan": "Brand clothing at outlet prices",
+            "visitParndorf": "Visit Parndorf",
+            "visitSalzburg": "Visit Salzburg"
+        },
+        "about": {
+            "title": "About Us",
+            "p1": "kids only offers a shopping world of leading children's clothing manufacturers of lifestyle brands, united in one store. The focus ranges from babies to toddlers to teenagers, for whom separate worlds of experience have been created. With a wide selection, every price range is represented. Friendly and qualified specialist staff is always available for high-quality advice.",
+            "p2": "At kids only, we want your children to feel comfortable in their clothes and look good at the same time. Our range consists of high-quality brands at outlet prices. With us you will find clothing for every occasion, whether christening, everyday life or ski vacation! Our mission is to offer you and your children the best possible shopping experience. Fashion should be fun!"
+        },
+        "storeCards": {
+            "parndorfTitle": "Parndorf",
+            "parndorfDesc": "Our flagship store in the renowned Fashion Outlet Parndorf offers an extensive selection of premium children's clothing in a spacious, modern environment.",
+            "parndorfAlt": "Parndorf - Fashion Outlet Parndorf - Children's clothing at outlet prices",
+            "salzburgTitle": "Salzburg",
+            "salzburgDesc": "Our store in the Designer Outlet Salzburg combines old-world charm with contemporary elegance and creates a unique shopping atmosphere.",
+            "salzburgAlt": "Salzburg - Designer Outlet Salzburg - Children's clothing at outlet prices",
+            "learnMore": "Learn more",
+            "altSuffix": "Children's clothing at outlet prices"
+        },
+        "brands": {
+            "title": "Our Top Brands",
+            "subtitle": "Quality brands at outlet prices - all under one roof"
+        },
+        "cta": {
+            "title": "Our Collections for Children",
+            "description": "Our collections are carefully selected to ensure that we offer products that meet the highest quality standards. From cute and comfortable baby clothes to trendy outfits for teenagers - you will find everything with us. Our garments are not only stylish, but also functional and durable to meet your child's needs.",
+            "parndorfBtn": "Parndorf Branch",
+            "salzburgBtn": "Salzburg Branch"
+        }
+    },
+    "header": {
+        "home": "Home",
+        "parndorf": "Parndorf",
+        "salzburg": "Salzburg",
+        "language": "Language:"
+    },
+    "footer": {
+        "parndorfTitle": "Parndorf Branch",
+        "parndorfAddress": "Fashion Outlet Parndorf\n7111 Parndorf, Austria",
+        "salzburgTitle": "Salzburg Branch",
+        "salzburgAddress": "Kasernen Straße 1, Top 248\n5073 Himmelreich, Austria",
+        "followUs": "Follow Us",
+        "rights": "© 2025 kids only. All rights reserved.",
+        "impressum": "Imprint",
+        "privacy": "Privacy Policy"
+    },
+    "branchPage": {
+        "contactInfo": "Contact Information",
+        "openingHours": "Opening Hours",
+        "availableBrands": "Available Brands",
+        "gallery": "Store Gallery",
+        "features": "Store Features",
+        "interior": "Interior",
+        "decorations": "Decorations",
+        "centerPlan": "Center Plan",
+        "closed": "Closed",
+        "comingSoon": "Opening hours will be available soon",
+        "mapButton": "Open in Maps"
+    },
+    "parndorf": {
+        "title": "kids only Parndorf",
+        "description": "Our flagship store in the Fashion Outlet Parndorf offers a large selection of high-quality brand clothing at outlet prices. Experience shopping in a pleasant lifestyle atmosphere with friendly and qualified specialist staff.",
+        "features": [
+            "Large Selection - Every Price Range",
+            "Collections from Baby to Teenager",
+            "Qualified Specialist Staff",
+            "All Brands Under One Roof",
+            "Outlet Prices",
+            "Pleasant Lifestyle Atmosphere"
+        ],
+        "metaTitle": "kids only Parndorf - Fashion Outlet Parndorf | Children's clothing at outlet prices",
+        "metaDescription": "Visit kids only in the Fashion Outlet Parndorf. Opening hours, address and contact for high-quality children's clothing at outlet prices."
+    },
+    "salzburg": {
+        "title": "kids only Salzburg",
+        "description": "Our store in the Designer Outlet Salzburg offers high-quality children's clothing at outlet prices. Find clothing for every occasion in a pleasant lifestyle atmosphere - from christenings to everyday clothes to ski vacations.",
+        "features": [
+            "Designer Outlet Location",
+            "Quality Brands at Outlet Prices",
+            "Friendly Specialist Staff",
+            "Clothing for Every Occasion",
+            "Collections from Baby to Teenager",
+            "Pleasant Shopping Atmosphere"
+        ],
+        "metaTitle": "kids only Salzburg - Designer Outlet Salzburg | Children's clothing at outlet prices",
+        "metaDescription": "Visit kids only in the Designer Outlet Salzburg. Opening hours, address and contact information for premium children's clothing at outlet prices."
+    },
+    "impressum": {
+        "title": "Imprint",
+        "companyInfo": "Company Information",
+        "companyName": "Company Name:",
+        "address": "Address:",
+        "phone": "Phone:",
+        "email": "Email:",
+        "legalInfo": "Legal Information",
+        "court": "Commercial Register Court:",
+        "registerNumber": "Commercial Register Number:",
+        "ceo": "Managing Director:",
+        "uid": "VAT Number:",
+        "dispute": "Dispute Resolution",
+        "odrPlatform": "EU Commission Platform for Online Dispute Resolution:",
+        "disputeText": "We are neither obliged nor willing to participate in a dispute settlement procedure before a consumer arbitration board.",
+        "date": "Status: October 2025"
+    },
+    "privacyPage": {
+        "title": "Privacy Policy",
+        "section1": {
+            "title": "1) Introduction and Contact Details of the Controller",
+            "p1": "1.1 We are pleased that you are visiting our website and thank you for your interest. In the following, we inform you about the handling of your personal data when using our website. Personal data is all data with which you can be personally identified.",
+            "p2": "1.2 The controller for data processing on this website within the meaning of the General Data Protection Regulation (GDPR) is Johanns Handels und Gastro GmbH, Gewerbestrasse 4 Top 11, 7111 Parndorf, Austria, Tel.: +43 2166 20451, E-Mail: office@johanns.cc. The controller responsible for the processing of personal data is the natural or legal person who alone or jointly with others decides on the purposes and means of the processing of personal data."
+        },
+        "section2": {
+            "title": "2) Data Collection When Visiting Our Website",
+            "p1": "2.1 If you use our website for information purposes only, i.e. if you do not register or otherwise provide us with information, we only collect data that your browser transmits to our server (so-called \"server log files\"). When you visit our website, we collect the following data that is technically necessary for us to display the website to you:",
+            "list": [
+                "Our visited website",
+                "Date and time at the time of access",
+                "Amount of data sent in bytes",
+                "Source/reference from which you came to the page",
+                "Browser used",
+                "Operating system used",
+                "IP address used (if applicable: in anonymized form)"
+            ],
+            "p2": "Processing is carried out in accordance with Art. 6 (1) lit. f GDPR based on our legitimate interest in improving the stability and functionality of our website. The data will not be passed on or used in any other way. However, we reserve the right to check the server log files subsequently if there are concrete indications of illegal use.",
+            "p3": "2.2 For security reasons and to protect the transmission of personal data and other confidential content (e.g. orders or inquiries to the controller), this website uses SSL or TLS encryption. You can recognize an encrypted connection by the character string \"https://\" and the lock symbol in your browser line."
+        },
+        "section3": {
+            "title": "3) Hosting & Content Delivery Network",
+            "wix": {
+                "title": "3.1 Wix",
+                "p1": "For hosting our website and displaying the page content, we use the system of the following provider: Wix HQ, 6350671, Nemal Tel Aviv St 40, Tel Aviv-Yafo, Israel",
+                "p2": "Data is also transferred to: Wix Inc., 500 Terry A. Francois Boulevard, San Francisco, California 94158, USA",
+                "p3": "All data collected on our website is processed on the provider's servers.",
+                "p4": "We have concluded a data processing agreement with the provider, which ensures the protection of our site visitors' data and prohibits unauthorized disclosure to third parties.",
+                "p5": "In the event of data transfer to the provider's location, an adequate level of data protection is ensured by an adequacy decision of the European Commission.",
+                "p6": "For data transfers to the USA, the provider has joined the EU-US Data Privacy Framework, which ensures compliance with the European level of data protection based on an adequacy decision of the European Commission."
+            },
+            "google": {
+                "title": "3.2 Google Cloud CDN",
+                "p1": "We use a Content Delivery Network of the following provider: Google Ireland Limited, Gordon House, 4 Barrow St, Dublin, D04 E5W5, Ireland",
+                "p2": "This service enables us to deliver large media files such as graphics, page content or scripts faster via a network of regionally distributed servers. The processing is carried out to safeguard our legitimate interest in improving the stability and functionality of our website in accordance with Art. 6 (1) lit. f GDPR.",
+                "p3": "Data may also be transferred to: Google LLC, USA",
+                "p4": "We have concluded a data processing agreement with the provider, which ensures the protection of our site visitors' data and prohibits unauthorized disclosure to third parties.",
+                "p5": "For data transfers to the USA, the provider has joined the EU-US Data Privacy Framework, which ensures compliance with the European level of data protection based on an adequacy decision of the European Commission."
+            }
+        },
+        "section4": {
+            "title": "4) Cookies",
+            "p1": "In order to make visiting our website attractive and to enable the use of certain functions, we use cookies, i.e. small text files that are stored on your end device. Some of these cookies are automatically deleted after closing the browser (so-called \"session cookies\"), some of these cookies remain on your end device for longer and enable the storage of page settings (so-called \"persistent cookies\"). In the latter case, you can find the storage duration in the overview of the cookie settings of your web browser.",
+            "p2": "If personal data is also processed by individual cookies used by us, the processing is carried out in accordance with Art. 6 (1) lit. b GDPR either for the execution of the contract, in accordance with Art. 6 (1) lit. a GDPR in the case of consent given or in accordance with Art. 6 (1) lit. f GDPR to safeguard our legitimate interests in the best possible functionality of the website and a customer-friendly and effective design of the page visit.",
+            "p3": "You can set your browser so that you are informed about the setting of cookies and decide individually on their acceptance or exclude the acceptance of cookies for certain cases or generally.",
+            "p4": "Please note that if you do not accept cookies, the functionality of our website may be restricted."
+        },
+        "section5": {
+            "title": "5) Contacting Us",
+            "wix": {
+                "title": "5.1 Wix Bookings/Wix Events",
+                "p1": "For the provision of an online appointment booking function, we use the services of the following provider: Wix HQ, 6350671, Nemal Tel Aviv St 40, Tel Aviv-Yafo, Israel",
+                "p2": "Data is also transferred to: Wix Inc., 500 Terry A. Francois Boulevard, San Francisco, California 94158, USA",
+                "p3": "For the purpose of appointment allocation, first and last name as well as email address (and possibly the telephone number, if a telephone appointment is desired) are collected in accordance with Art. 6 (1) lit. b GDPR and transmitted to the provider in accordance with Art. 6 (1) lit. f GDPR based on our legitimate interest in effective customer management and efficient appointment administration and stored there for appointment organization.",
+                "p4": "After the appointment has been held or after the agreed appointment period has expired, your data will be deleted by the provider.",
+                "p5": "We have concluded a data processing agreement with the provider, which ensures the protection of our site visitors' data and prohibits unauthorized disclosure to third parties.",
+                "p6": "In the event of data transfer to the provider's location, an adequate level of data protection is ensured by an adequacy decision of the European Commission.",
+                "p7": "For data transfers to the USA, the provider has joined the EU-US Data Privacy Framework, which ensures compliance with the European level of data protection based on an adequacy decision of the European Commission."
+            },
+            "whatsapp": {
+                "title": "5.2 WhatsApp Business",
+                "p1": "We offer visitors to our website the opportunity to contact us via the WhatsApp messaging service of WhatsApp Ireland Limited, 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Ireland. For this purpose, we use the so-called \"Business Version\" of WhatsApp.",
+                "p2": "If you contact us via WhatsApp on the occasion of a specific transaction (e.g. an order placed), we store and use the mobile number you use on WhatsApp and – if provided – your first and last name in accordance with Art. 6 (1) lit. b GDPR to process and answer your request. On the basis of the same legal basis, we may ask you via WhatsApp to provide further data (order number, customer number, address or email address) in order to be able to assign your request to a specific process.",
+                "p3": "If you use our WhatsApp contact for general inquiries (e.g. about the range of services, availability or our website), we store and use the mobile number you use on WhatsApp and – if provided – your first and last name in accordance with Art. 6 (1) lit. f GDPR based on our legitimate interest in the efficient and timely provision of the desired information.",
+                "p4": "Your data will always only be used to answer your request via WhatsApp. Disclosure to third parties does not take place.",
+                "p5": "Please note that WhatsApp Business receives access to the address book of the mobile device we use for this purpose and automatically transfers telephone numbers stored in the address book to a server of the parent company Meta Platforms Inc. in the USA. For the operation of our WhatsApp Business account, we use a mobile device in whose address book only the WhatsApp contact details of such users are stored who have also contacted us via WhatsApp.",
+                "p6": "This ensures that every person whose WhatsApp contact details are stored in our address book has already consented to the transmission of their WhatsApp telephone number from the address books of their chat contacts in accordance with Art. 6 (1) lit. a GDPR when using the app on their device for the first time by accepting the WhatsApp terms of use. A transmission of data of such users who do not use WhatsApp and/or have not contacted us via WhatsApp is thus excluded.",
+                "p7": "For the purpose and scope of data collection and the further processing and use of data by WhatsApp as well as your rights and setting options for protecting your privacy, please refer to WhatsApp's privacy policy: https://www.whatsapp.com/legal/?eea=1#privacy-policy",
+                "p8": "In the context of the above-mentioned processing, data transfers to servers of Meta Platforms Inc. in the USA may occur.",
+                "p9": "For data transfers to the USA, the provider has joined the EU-US Data Privacy Framework, which ensures compliance with the European level of data protection based on an adequacy decision of the European Commission."
+            },
+            "contact": {
+                "title": "5.3 When Contacting Us",
+                "p1": "When contacting us (e.g. via contact form or email), personal data is collected. Which data is collected in the case of using a contact form can be seen from the respective contact form. These data are stored and used exclusively for the purpose of answering your request or for contacting you and the associated technical administration.",
+                "p2": "The legal basis for processing this data is our legitimate interest in answering your request in accordance with Art. 6 (1) lit. f GDPR. If your contact aims at the conclusion of a contract, the additional legal basis for processing is Art. 6 (1) lit. b GDPR. Your data will be deleted after final processing of your request. This is the case if it can be inferred from the circumstances that the matter concerned has been finally clarified and provided that there are no statutory retention obligations to the contrary."
+            }
+        },
+        "section6": {
+            "title": "6) Registration on the Portal or Forum",
+            "p1": "You can register on our website by providing personal data. Which personal data is processed for registration can be seen from the input mask used for registration. We use the so-called double opt-in procedure for registration, i.e. your registration is only complete when you have previously confirmed your registration via a confirmation email sent to you for this purpose by clicking on the link contained therein. If your confirmation is not received within 24 hours, your registration will be automatically deleted from our database. The provision of the aforementioned data is mandatory. You can voluntarily provide all other information by using our portal.",
+            "p2": "If you use our portal, we store your data required for contract fulfillment, including any payment information, until you permanently delete your access. We also store the voluntary data you have provided for the duration of your use of the portal, unless you delete it beforehand. You can manage and change all information in the protected customer area. The legal basis is Art. 6 (1) lit. f GDPR.",
+            "p3": "In addition, we store all content published by you (such as public posts, wall entries, guestbook entries, etc.) in order to operate the website. We have a legitimate interest in providing the website with complete user-generated content. The legal basis for this is Art. 6 (1) lit. f GDPR. If you delete your account, your public statements, especially in the forum, will remain visible to all readers, but your account will no longer be accessible. All other data will be deleted in this case."
+        },
+        "section7_marketing": {
+            "title": "7) Use of Customer Data for Direct Marketing",
+            "newsletter": {
+                "title": "7.1 Registration for Our Subscription/Email Newsletter",
+                "p1": "By using our registration form, you expressly agree that we process the personal data you voluntarily provide, including your first and last name, date of birth, your email address, your signature, and optional information such as telephone number, address and data of your child, which may include name, surname, date of birth and gender. This data is collected exclusively to provide you with information about our offers, promotions, and services, to enable the management of your registration and to offer you a personal approach via our email newsletter and other communication channels. The processing of this data is based on your voluntary consent in accordance with Art. 6 (1) lit. a GDPR, which you give by submitting the form, and - if you have provided us with your email address when purchasing goods or services - based on our legitimate interest in accordance with Art. 6 (1) lit. f GDPR to provide you with personalized information about similar products and services.",
+                "p2": "Your personal data will be transmitted to the service provider Brevo, which handles the storage, management and sending of newsletters. Brevo processes and stores your data exclusively for the purposes described in this context. Disclosure to third parties only takes place if this is necessary for contract fulfillment, legal protection or due to legal obligations. Brevo ensures an adequate level of data protection, has implemented technical and organizational measures to protect your data and only processes the data within the scope of the purposes we specify. You have the right to revoke your consent at any time, whereby the further use of your data for advertising purposes will be terminated, unless there are legal retention obligations to the contrary.",
+                "p3": "The provision of additional personal data, such as telephone number, address or data of your child, is voluntary in order to enable individual addressing, optimize organizational processes or provide special offers. For children, you as a legal guardian expressly give your consent to the processing of your child's personal data. You assure that the data you provide is correct, complete and up-to-date.",
+                "p4": "Your data will be used exclusively for the management of the registration, for sending information, offers, promotions and campaigns, for communication within the newsletter and for internal analyses and optimizations. The data will not be used for other purposes. You have the right at any time to object to the processing of your personal data for advertising purposes, whereby further processing can only take place if there are compelling legitimate reasons that outweigh your interests, rights and freedoms, or if the processing serves to assert, exercise or defend legal claims.",
+                "p5": "For registration to our newsletter, only your email address is required. Further information, such as name, date of birth, telephone number or child data, is voluntary and serves for personalized addressing. There is no double opt-in procedure; your data will be stored in our newsletter system Brevo immediately after submitting the form and used for sending information. You can unsubscribe from the newsletter at any time by using the unsubscribe link in the newsletter or by sending us a corresponding message to the email address specified in the form. After unsubscribing, your data will be immediately deleted from our newsletter distribution list, unless there are other legal retention obligations.",
+                "p6": "Your personal data will be stored for as long as is necessary for the purposes for which it was collected, or until you revoke your consent. Legal retention periods, for example according to commercial or tax regulations, remain unaffected. Data that is no longer needed will be routinely deleted. For data processed on the basis of our legitimate interest, you can object at any time; in this case, processing will be stopped unless there are compelling legitimate reasons that outweigh your interests, rights and freedoms, or if the processing serves to assert, exercise or defend legal claims.",
+                "p7": "We expressly point out that the use of Brevo's services may result in your data being processed and stored on servers in the European Union or in third countries, especially in the USA. Brevo has joined the EU-US Data Privacy Framework and thus ensures an adequate level of data protection in accordance with the requirements of the GDPR.",
+                "p8": "You have the right to information about the data stored about you, the right to correction of incorrect data, the right to deletion, the right to restriction of processing, the right to information about data processing, the right to data portability, the right to revoke your consent and the right to lodge a complaint with the competent supervisory authority. The revocation of consent or objection to processing for advertising purposes can be made at any time with effect for the future.",
+                "p9": "You acknowledge that we assume no liability for technical disruptions, data loss during transmission or for the storage of your data on Brevo's servers. Brevo is responsible for the secure storage and protection of your data, and we have concluded a data processing agreement with Brevo that ensures compliance with data protection regulations and excludes unauthorized disclosure to third parties. Data transmission is encrypted to ensure the security of your personal data.",
+                "p10": "By using the form, you agree that we process your data exclusively for the purposes stated in this declaration. You undertake not to provide false, misleading or incomplete information. The consent of the legal guardian is always required for the processing of data of minors. If your information changes or is no longer correct, we ask you to update it accordingly.",
+                "p11": "We reserve the right to adapt this privacy policy and the terms of use at any time to take account of changes in the legal situation, data processing or the technologies we use. The current version can be viewed on our website. By continuing to use the form after publication of changes, you agree to the updated version."
+            },
+            "whatsapp": {
+                "title": "7.3 WhatsApp Newsletter",
+                "p1": "If you subscribe to our WhatsApp newsletter, we will regularly send you information about our offers via WhatsApp. The only mandatory information for sending the newsletter is your mobile number.",
+                "p2": "To send the newsletter, add our communicated mobile number to the address contacts of your mobile device and send us the message \"Start\" via WhatsApp. By sending this WhatsApp message, you give us your consent to use your personal data in accordance with Art. 6 (1) lit. a GDPR for the purpose of sending the newsletter. We will then add you to our newsletter distribution list.",
+                "p3": "The data we collect when you register for the newsletter will be processed exclusively for the purpose of advertising via the newsletter. You can unsubscribe from the newsletter at any time by sending us the message \"Stop\" via WhatsApp. After unsubscribing, your mobile number will be immediately deleted from our newsletter distribution list, unless you have expressly consented to further use of your data or we reserve the right to use the data beyond this, which is permitted by law and about which we inform you in this declaration.",
+                "p4": "Please note that WhatsApp receives access to the address book of the mobile device we use for sending newsletters and automatically transfers telephone numbers stored in the address book to a Facebook server in the USA.",
+                "p5": "For sending our WhatsApp newsletter, we therefore use a mobile device in whose address book only the WhatsApp contact details of our newsletter recipients are stored. This ensures that every person whose WhatsApp contact details are stored in our address book has already consented to the transmission of their WhatsApp telephone number from the address books of their chat contacts in accordance with Art. 6 (1) lit. a GDPR when using the app on their device for the first time by accepting the WhatsApp terms of use. A transmission of data of such users who do not use WhatsApp and/or have not contacted us via WhatsApp is thus excluded.",
+                "p6": "For the purpose and scope of data collection and the further processing and use of data by WhatsApp as well as your rights and setting options for protecting your privacy, please refer to WhatsApp's privacy policy: https://www.whatsapp.com/legal/?eea=1#privacy-policy",
+                "p7": "In the context of the above-mentioned processing, data transfers to servers of Meta Platforms Inc. in the USA may occur.",
+                "p8": "For data transfers to the USA, the provider has joined the EU-US Data Privacy Framework, which ensures compliance with the European level of data protection based on an adequacy decision of the European Commission."
+            }
+        },
+        "section8": {
+            "title": "8) Web Analytics Services",
+            "polyfill": {
+                "title": "8.1 Polyfill",
+                "p1": "This website uses the service of the following provider: The Financial Times Ltd., Bracken House, 1 Friday Street, London, England, EC4M 9BT",
+                "p2": "The service installs a script on our website that enables content to be displayed in high quality even on older browser versions by providing and transmitting polyfill files when the browser requests them to bridge missing browser functions. For this purpose, certain technical information such as browser details and connection data including your IP address in anonymized form is automatically passed on to the provider.",
+                "p3": "The information is used to determine which polyfill files are required by your browser for proper display of the page content.",
+                "p4": "If personal data is also processed in this context, the processing is carried out on the basis of our legitimate interests in the optimal presentation of our website and the optimization of the user experience in accordance with Art. 6 (1) lit. f GDPR.",
+                "p5": "In the event of data transfer to the provider's location, an adequate level of data protection is ensured by an adequacy decision of the European Commission."
+            },
+            "wix": {
+                "title": "8.2 Wix Analytics",
+                "p1": "This website uses the web analytics service of the following provider: Wix HQ, 6350671, Nemal Tel Aviv St 40, Tel Aviv-Yafo, Israel",
+                "p2": "Using cookies and/or comparable technologies (tracking pixels, web beacons, algorithms for reading device and browser information), the service collects and stores pseudonymized visitor data, including information from the device used such as the IP address and browser information, in order to evaluate it for statistical analyses of user behavior on our website and to create pseudonymized user profiles. Among other things, this enables the evaluation of movement patterns (so-called heatmaps), which show the duration of page visits and interactions with page content (e.g. text entries, scrolling, clicks and mouse-overs). Pseudonymization generally excludes direct personal identification. A combination with clear data about you collected in other ways does not take place.",
+                "p3": "All processing described above, in particular the reading or storage of information on the device used, will only be carried out if you have given us your express consent in accordance with Art. 6 (1) lit. a GDPR. You can revoke your consent at any time with effect for the future by deactivating this service in the \"Cookie Consent Tool\" provided on the website.",
+                "p4": "We have concluded a data processing agreement with the provider, which ensures the protection of our site visitors' data and prohibits unauthorized disclosure to third parties.",
+                "p5": "In the event of data transfer to the provider's location, an adequate level of data protection is ensured by an adequacy decision of the European Commission."
+            }
+        },
+        "section9": {
+            "title": "9) Page Functionalities",
+            "facebook": {
+                "title": "9.1 Facebook Plugins",
+                "p1": "Plugins of the social network of the following provider are used on our website: Meta Platforms Ireland Ltd., 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Ireland",
+                "p2": "These plugins enable direct interactions with content on the social network.",
+                "p3": "To increase the protection of your data when visiting our website, the plugins are initially deactivated using the so-called \"2-click\" or \"Shariff\" solution integrated into the page.",
+                "p4": "This integration ensures that when you access a page of our website that contains such plugins, no connection is yet established with the provider's servers.",
+                "p5": "Only when you activate the plugins and thus give your consent to data transmission in accordance with Art. 6 (1) lit. a GDPR does your browser establish a direct connection to the provider's servers. In this case, regardless of whether you are logged into an existing user profile, information about your device used (including your IP address), your browser and your page history is transmitted to the provider to a certain extent and may be further processed there.",
+                "p6": "If you are logged into an existing user profile on the provider's social network, information about interactions made via the plugins will also be published there and displayed to your contacts.",
+                "p7": "You can revoke your consent at any time by clicking the activated plugin again to deactivate it. However, the revocation has no effect on the data that has already been transferred to the provider.",
+                "p8": "Data may also be transferred to: Meta Platforms Inc., USA",
+                "p9": "We have concluded a data processing agreement with the provider, which ensures the protection of our site visitors' data and prohibits unauthorized disclosure to third parties.",
+                "p10": "For data transfers to the USA, the provider has joined the EU-US Data Privacy Framework, which ensures compliance with the European level of data protection based on an adequacy decision of the European Commission."
+            },
+            "instagram": {
+                "title": "9.2 Instagram Plugins",
+                "p1": "Plugins of the social network of the following provider are used on our website: Meta Platforms Ireland Ltd., 4 Grand Canal Square, Grand Canal Harbour, Dublin 2 Ireland",
+                "p2": "These plugins enable direct interactions with content on the social network.",
+                "p3": "To increase the protection of your data when visiting our website, the plugins are initially deactivated using the so-called \"2-click\" or \"Shariff\" solution integrated into the page.",
+                "p4": "This integration ensures that when you access a page of our website that contains such plugins, no connection is yet established with the provider's servers.",
+                "p5": "Only when you activate the plugins and thus give your consent to data transmission in accordance with Art. 6 (1) lit. a GDPR does your browser establish a direct connection to the provider's servers. In this case, regardless of whether you are logged into an existing user profile, information about your device used (including your IP address), your browser and your page history is transmitted to the provider to a certain extent and may be further processed there.",
+                "p6": "If you are logged into an existing user profile on the provider's social network, information about interactions made via the plugins will also be published there and displayed to your contacts.",
+                "p7": "You can revoke your consent at any time by clicking the activated plugin again to deactivate it. However, the revocation has no effect on the data that has already been transferred to the provider.",
+                "p8": "Data may also be transferred to: Meta Platforms Inc., USA",
+                "p9": "We have concluded a data processing agreement with the provider, which ensures the protection of our site visitors' data and prohibits unauthorized disclosure to third parties.",
+                "p10": "For data transfers to the USA, the provider has joined the EU-US Data Privacy Framework, which ensures compliance with the European level of data protection based on an adequacy decision of the European Commission."
+            },
+            "googleMaps": {
+                "title": "9.3 Google Maps",
+                "p1": "This website uses an online map service from the following provider: Google Maps (API) from Google Ireland Limited, Gordon House, 4 Barrow St, Dublin, D04 E5W5, Ireland (\"Google\").",
+                "p2": "Google Maps is a web service for displaying interactive (land) maps to visually present geographical information. Using this service, our location is displayed to you and any journey is facilitated.",
+                "p3": "Already when accessing those subpages in which the map from Google Maps is embedded, information about your use of our website (such as your IP address) is transmitted to Google servers and stored there, whereby transmission to the servers of Google LLC. in the USA may also occur. This is done regardless of whether Google provides a user account through which you are logged in or whether a user account exists. If you are logged in to Google, your data will be directly assigned to your account. If you do not want the assignment to your profile at Google, you must log out before activating the button. Google stores your data (even for users who are not logged in) as usage profiles and evaluates them.",
+                "p4": "The collection, storage and evaluation are carried out in accordance with Art. 6 (1) lit. f GDPR based on Google's legitimate interest in displaying personalized advertising, market research and/or the needs-based design of Google websites. You have a right to object to the creation of these user profiles, whereby you must contact Google to exercise this right. If you do not agree to the future transmission of your data to Google in connection with the use of Google Maps, there is also the option to completely deactivate the Google Maps web service by switching off the JavaScript application in your browser. Google Maps and thus also the map display on this website can then not be used.",
+                "p5": "If legally required, we have obtained your consent in accordance with Art. 6 (1) lit. a GDPR for the processing of your data described above. You can revoke your consent at any time with effect for the future. To exercise your revocation, please follow the option described above for making an objection.",
+                "p6": "For data transfers to the USA, the provider has joined the EU-US Data Privacy Framework, which ensures compliance with the European level of data protection based on an adequacy decision of the European Commission."
+            },
+            "googleTranslate": {
+                "title": "9.4 Google Translate",
+                "p1": "This page uses the translation service \"Google Translate\" from Google Ireland Limited, Gordon House, 4 Barrow St, Dublin, D04 E5W5, Ireland (\"Google\") via an API integration. So that the translation is automatically displayed according to your choice of national language, the browser you are using connects to Google's servers. Google uses so-called \"cookies\", which are text files that are stored on your computer and enable an analysis of your use of the website. The information generated by the cookie about your use of this website (including the shortened IP address) is usually transmitted to a Google server and stored there, whereby transmission to the servers of Google LLC. in the USA may also occur.",
+                "p2": "If personal data is processed, this is done in accordance with Art. 6 (1) lit. f GDPR based on our legitimate interest in barrier-free and universal accessibility of our website.",
+                "p3": "If legally required, we have obtained your consent in accordance with Art. 6 (1) lit. a GDPR for the processing of your data described above. You can revoke your consent at any time with effect for the future. To exercise your revocation, deactivate this service in the \"Cookie Consent Tool\" provided on the website.",
+                "p4": "For data transfers to the USA, the provider has joined the EU-US Data Privacy Framework, which ensures compliance with the European level of data protection based on an adequacy decision of the European Commission."
+            },
+            "googleReviews": {
+                "title": "9.5 Google Customer Reviews (formerly Google Certified Shops Program)",
+                "p1": "We work with Google as part of the \"Google Customer Reviews\" program. The provider is Google Ireland Limited, Gordon House, 4 Barrow St, Dublin, D04 E5W5, Ireland (\"Google\"). This program gives us the opportunity to obtain customer reviews from users of our website. After making a purchase on our website, you will be asked if you would like to participate in an email survey from Google.",
+                "p2": "If you give your consent in accordance with Art. 6 (1) lit. a GDPR, we will transmit your email address to Google. You will receive an email from Google Customer Reviews asking you to rate the purchase experience on our website. The rating you submit will then be combined with our other ratings and displayed in our Google Customer Reviews logo and in our Merchant Center dashboard. Your rating will also be used for Google Seller Ratings. In connection with the use of Google Customer Reviews, personal data may also be transmitted to the servers of Google LLC. in the USA.",
+                "p3": "You can revoke your consent at any time by sending a message to the controller responsible for data processing or to Google.",
+                "p4": "For data transfers to the USA, the provider has joined the EU-US Data Privacy Framework, which ensures compliance with the European level of data protection based on an adequacy decision of the European Commission."
+            },
+            "jobsEmail": {
+                "title": "9.6 Applications for Job Postings via Email",
+                "p1": "On our website, we advertise currently vacant positions in a separate section, to which interested parties can apply via email to the contact address provided.",
+                "p2": "Applicants must provide all personal data required for a well-founded assessment, including general information such as name, address and contact options, as well as performance-related evidence and, if applicable, health-related information. Details of the application can be found in the job posting.",
+                "p3": "After receipt of the application via email, the data will be stored and evaluated exclusively for the purpose of processing the application. If we have any queries, we will use either the applicant's email address or telephone number. Processing is based on Art. 6 (1) lit. b GDPR (or § 26 (1) BDSG), in the sense of which going through the application process is considered to be the initiation of an employment contract.",
+                "p4": "If special categories of personal data within the meaning of Art. 9 (1) GDPR (e.g. health data such as information about severe disability) are requested from applicants as part of the application process, processing is carried out in accordance with Art. 9 (2) lit. b GDPR so that we can exercise the rights arising from labor law and the law of social security and social protection and fulfill our obligations in this regard.",
+                "p5": "Cumulatively or alternatively, the processing of special data categories can also be based on Art. 9 (1) lit. h GDPR if it is carried out for the purposes of preventive health care or occupational medicine, for the assessment of the applicant's ability to work, for medical diagnostics, care or treatment in the health or social sector or for the administration of systems and services in the health or social sector.",
+                "p6": "If the applicant is not selected or if an applicant withdraws their application prematurely, their transmitted data and all electronic correspondence including the application email will be deleted no later than 6 months after appropriate notification. This period is based on our legitimate interest in answering any follow-up questions about the application and, if necessary, being able to fulfill our obligations to provide evidence under the regulations on equal treatment of applicants.",
+                "p7": "In the event of a successful application, the data provided will be processed on the basis of Art. 6 (1) lit. b GDPR (in the case of processing in Germany in conjunction with § 26 (1) BDSG) for the purpose of carrying out the employment relationship."
+            },
+            "jobsForm": {
+                "title": "9.7 Online Applications via a Form",
+                "p1": "On our website, we advertise currently vacant positions in a separate section, to which interested parties can apply via a corresponding form.",
+                "p2": "Applicants must provide all personal data required for a well-founded assessment, including general information such as name, address and contact options, as well as performance-related evidence and, if applicable, health-related information. Details of the application can be found in the job posting.",
+                "p3": "When the form is sent, the applicant data is transmitted to us encrypted in accordance with the state of the art, stored by us and evaluated exclusively for the purpose of processing the application. Processing is based on Art. 6 (1) lit. b GDPR (or § 26 (1) BDSG), in the sense of which going through the application process is considered to be the initiation of an employment contract.",
+                "p4": "If special categories of personal data within the meaning of Art. 9 (1) GDPR (e.g. health data such as information about severe disability) are requested from applicants as part of the application process, processing is carried out in accordance with Art. 9 (2) lit. b GDPR so that we can exercise the rights arising from labor law and the law of social security and social protection and fulfill our obligations in this regard.",
+                "p5": "Cumulatively or alternatively, the processing of special data categories can also be based on Art. 9 (1) lit. h GDPR if it is carried out for the purposes of preventive health care or occupational medicine, for the assessment of the applicant's ability to work, for medical diagnostics, care or treatment in the health or social sector or for the administration of systems and services in the health or social sector.",
+                "p6": "If the applicant is not selected or if an applicant withdraws their application prematurely, their data transmitted via the form and all electronic correspondence including the application email will be deleted no later than 6 months after appropriate notification. This period is based on our legitimate interest in answering any follow-up questions about the application and, if necessary, being able to fulfill our obligations to provide evidence under the regulations on equal treatment of applicants.",
+                "p7": "In the event of a successful application, the data provided will be processed on the basis of Art. 6 (1) lit. b GDPR (in the case of processing in Germany in conjunction with § 26 (1) BDSG) for the purpose of carrying out the employment relationship."
+            }
+        },
+        "section10": {
+            "title": "10) Rights of the Data Subject",
+            "p1": "10.1 The applicable data protection law grants you the following data subject rights (information and intervention rights) vis-à-vis the controller with regard to the processing of your personal data, whereby reference is made to the cited legal basis for the respective exercise requirements:",
+            "list": [
+                "Right of access in accordance with Art. 15 GDPR;",
+                "Right to rectification in accordance with Art. 16 GDPR;",
+                "Right to erasure in accordance with Art. 17 GDPR;",
+                "Right to restriction of processing in accordance with Art. 18 GDPR;",
+                "Right to notification in accordance with Art. 19 GDPR;",
+                "Right to data portability in accordance with Art. 20 GDPR;",
+                "Right to withdraw consent given in accordance with Art. 7 (3) GDPR;",
+                "Right to lodge a complaint in accordance with Art. 77 GDPR."
+            ],
+            "title2": "10.2 RIGHT TO OBJECT",
+            "p2": "IF WE PROCESS YOUR PERSONAL DATA ON THE BASIS OF A BALANCING OF INTERESTS DUE TO OUR OVERRIDING LEGITIMATE INTEREST, YOU HAVE THE RIGHT AT ANY TIME TO OBJECT TO THIS PROCESSING WITH EFFECT FOR THE FUTURE FOR REASONS ARISING FROM YOUR PARTICULAR SITUATION.",
+            "p3": "IF YOU EXERCISE YOUR RIGHT TO OBJECT, WE WILL CEASE PROCESSING THE DATA CONCERNED FOR DIRECT MARKETING PURPOSES."
+        },
+        "section7_storage": {
+            "title": "7) Duration of Storage of Personal Data",
+            "p1": "The duration of storage of personal data is based on the respective legal basis, the processing purpose and - if applicable - additionally on the respective statutory retention period (e.g. commercial and tax retention periods).",
+            "p2": "When processing personal data on the basis of express consent in accordance with Art. 6 (1) lit. a GDPR, the data concerned will be stored until you revoke your consent.",
+            "p3": "If there are statutory retention periods for data that is processed in the context of legal or similar legal obligations on the basis of Art. 6 (1) lit. b GDPR, this data will be routinely deleted after the retention periods have expired, provided that it is no longer required for contract fulfillment or contract initiation and/or we have no legitimate interest in continued storage.",
+            "p4": "When processing personal data on the basis of Art. 6 (1) lit. f GDPR, this data will be stored until you exercise your right to object in accordance with Art. 21 (1) GDPR, unless we can demonstrate compelling legitimate grounds for processing that override your interests, rights and freedoms, or the processing serves to assert, exercise or defend legal claims.",
+            "p5": "When processing personal data for the purpose of direct marketing on the basis of Art. 6 (1) lit. f GDPR, this data will be stored until you exercise your right to object in accordance with Art. 21 (2) GDPR.",
+            "p6": "Unless otherwise stated in the other information in this declaration about specific processing situations, stored personal data will otherwise be deleted when it is no longer necessary for the purposes for which it was collected or otherwise processed."
+        }
+    },
+    "SubscriptionForm": {
+        "title": "Join Our Newsletter",
+        "subtitle": "Stay updated with the latest news and exclusive offers.",
+        "branchSelection": "Select Branch",
+        "branch": "Preferred Branch",
+        "selectBranch": "Select a branch",
+        "personalData": "Personal Data",
+        "firstName": "First Name",
+        "firstNamePlaceholder": "John",
+        "lastName": "Last Name",
+        "lastNamePlaceholder": "Doe",
+        "email": "Email",
+        "emailPlaceholder": "john@example.com",
+        "phone": "Phone Number",
+        "phonePlaceholder": "+43...",
+        "dob": "Parent's Date of Birth",
+        "dobPlaceholder": "DD.MM.YYYY",
+        "address": "Address (Optional)",
+        "street": "Street",
+        "postalCode": "Postal Code",
+        "city": "City",
+        "province": "Province",
+        "country": "Country",
+        "children": "Children",
+        "addChild": "Add Child",
+        "noChildren": "No children added yet.",
+        "child": "Child",
+        "gender": "Gender",
+        "male": "Male",
+        "female": "Female",
+        "other": "Other",
+        "agreement": "Agreement",
+        "agreeLabel": "I agree to receive email updates and newsletters from Kids Only. By checking this box, I confirm that I have read and accepted the ",
+        "agreeLinkDatenschut": "Privacy Policy",
+        "and": "and",
+        "nutzungsBedingungen": "Terms of Use",
+        "zu": ".",
+        "agreeDescription": "You can unsubscribe at any time.",
+        "signature": "Signature",
+        "clear": "Clear",
+        "submitting": "Submitting...",
+        "subscribe": "Subscribe",
+        "successTitle": "Thank you!",
+        "successMessage": "You have successfully subscribed to our newsletter.",
+        "subscribeAnother": "Subscribe another person",
+        "errorTitle": "Error",
+        "errorMessage": "Something went wrong. Please try again.",
+        "validationError": "Please fix the errors in the form.",
+        "signatureRequired": "Please enter your signature."
+    }
+}

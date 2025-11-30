@@ -1,12 +1,14 @@
 import { Metadata } from "next";
-import Link from "next/link";
+
 import { Button } from "@/components/ui/button";
 import { MotionDiv } from "@/components/motion";
-import { Home, ArrowRight } from "lucide-react";
+import { Link } from "@/navigation";
+import { Home } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "404 - Seite nicht gefunden | kids only",
-  description: "Die angeforderte Seite konnte nicht gefunden werden. Zurück zur Startseite von kids only.",
+  description:
+    "Die angeforderte Seite konnte nicht gefunden werden. Zurück zur Startseite von kids only.",
   robots: {
     index: false,
     follow: true,
@@ -29,13 +31,11 @@ export default function NotFound() {
             Seite nicht gefunden
           </h2>
           <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-8 max-w-md mx-auto">
-            Die angeforderte Seite existiert leider nicht. Möglicherweise wurde sie verschoben oder gelöscht.
+            Die angeforderte Seite existiert leider nicht. Möglicherweise wurde
+            sie verschoben oder gelöscht.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              asChild
-              size="lg"
-            >
+            <Button asChild size="lg">
               <Link href="/">
                 <Home className="w-5 h-5" />
                 Zur Startseite

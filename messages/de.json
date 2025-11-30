@@ -1,0 +1,433 @@
+{
+    "seo": {
+        "home": {
+            "title": "kids only - Kinderbekleidung zu Outlet-Preisen | Parndorf & Salzburg",
+            "description": "kids only bietet qualitativ hochwertige Kinderbekleidung zu Outlet-Preisen. Besuchen Sie unsere Filialen im Fashion Outlet Parndorf und Designer Outlet Salzburg.",
+            "ogTitle": "kids only - Premium Kinderbekleidung zu Outlet-Preisen",
+            "ogDescription": "Entdecken Sie hochwertige Kindermode von Top-Marken zu unschlagbaren Preisen in Parndorf und Salzburg.",
+            "keywords": "Kinderbekleidung, Kinderkleidung, Outlet-Preise, Parndorf, Salzburg, Fashion Outlet, Designer Outlet, Markenkleidung, Babykleidung, Kindermode, Outlet Store, günstige Kinderkleidung, Premium Kindermode, kids only"
+        },
+        "parndorf": {
+            "title": "kids only Parndorf - Fashion Outlet | Kinderbekleidung",
+            "description": "Besuchen Sie kids only im Fashion Outlet Parndorf. Große Auswahl an Kinderbekleidung von Top-Marken wie Mayoral, Name It, Levi's, Tommy Hilfiger zu Outlet-Preisen. Öffnungszeiten und Kontakt.",
+            "ogTitle": "kids only Parndorf - Ihre Kinderbekleidung im Fashion Outlet",
+            "ogDescription": "Premium Kindermode im Fashion Outlet Parndorf. Top-Marken wie Mayoral, Name It, Levi's, Tommy Hilfiger zu besten Preisen. Kompetente Beratung.",
+            "keywords": "kids only Parndorf, Fashion Outlet Parndorf, Kinderbekleidung Parndorf, Mayoral Parndorf, Name It Parndorf, Levi's Kinder Parndorf, Tommy Hilfiger Kids Parndorf, Outlet Parndorf, Kinderkleidung Parndorf, Markenkleidung Parndorf, Babykleidung Parndorf, Outlet Store Parndorf, Kinderbekleidung Burgenland, Designer Kindermode Parndorf, günstige Kinderkleidung Parndorf, Neusiedl am See, Eisenstadt"
+        },
+        "salzburg": {
+            "title": "kids only Salzburg - Designer Outlet | Kinderbekleidung",
+            "description": "Besuchen Sie kids only im Designer Outlet Salzburg. Hochwertige Kinderbekleidung von führenden Marken wie Mayoral, Name It, Levi's, Tommy Hilfiger zu Outlet-Preisen. Öffnungszeiten und Anfahrt.",
+            "ogTitle": "kids only Salzburg - Kinderbekleidung im Designer Outlet",
+            "ogDescription": "Qualitative Kindermode im Designer Outlet Salzburg. Marken wie Mayoral, Name It, Levi's, Tommy Hilfiger zu attraktiven Preisen.",
+            "keywords": "kids only Salzburg, Designer Outlet Salzburg, Kinderbekleidung Salzburg, Mayoral Salzburg, Name It Salzburg, Levi's Kinder Salzburg, Tommy Hilfiger Kids Salzburg, Outlet Salzburg, Kinderkleidung Salzburg, Markenkleidung Salzburg, Babykleidung Salzburg, Outlet Store Salzburg, Kinderbekleidung Salzburg Umgebung, Designer Kindermode Salzburg, günstige Kinderkleidung Salzburg, Himmelreich, Wals-Siezenheim"
+        },
+        "impressum": {
+            "title": "Impressum | kids only",
+            "description": "Impressum und rechtliche Informationen von kids only für die Standorte Parndorf und Salzburg.",
+            "ogTitle": "Impressum - kids only",
+            "ogDescription": "Rechtliche Informationen und Kontaktdaten von kids only."
+        },
+        "privacy": {
+            "title": "Datenschutzerklärung | kids only",
+            "description": "Datenschutzerklärung von kids only. Informationen über die Verarbeitung personenbezogener Daten auf unserer Website.",
+            "ogTitle": "Datenschutzerklärung - kids only",
+            "ogDescription": "Erfahren Sie, wie wir Ihre personenbezogenen Daten schützen und verarbeiten."
+        }
+    },
+    "manifest": {
+        "name": "kids only - Kinderbekleidung zu Outlet-Preisen",
+        "shortName": "kids only",
+        "description": "kids only bietet qualitativ hochwertige Kinderbekleidung zu Outlet-Preisen. Besuchen Sie unsere Filialen in Parndorf und Salzburg für die besten Marken zu erschwinglichen Preisen."
+    },
+    "home": {
+        "title": "Startseite",
+        "description": "Willkommen auf der Startseite von kids only",
+        "hero": {
+            "altBackground": "Hero Hintergrundbild",
+            "altLogo": "kids only Logo - Kinderbekleidung zu Outlet-Preisen",
+            "slogan": "Markenkleidung zu Outlet-Preisen",
+            "visitParndorf": "Parndorf besuchen",
+            "visitSalzburg": "Salzburg besuchen"
+        },
+        "about": {
+            "title": "Über uns",
+            "p1": "kids only bietet eine Shopping-Welt führender Kinderbekleidungshersteller von Lifestyle-Marken, vereint in einem Geschäft. Der Fokus reicht von Babys über Kleinkinder bis hin zu Teenagern, für die separate Erlebniswelten geschaffen wurden. Mit einer breiten Auswahl ist jede Preisklasse vertreten. Freundliches und qualifiziertes Fachpersonal steht immer für hochwertige Beratung zur Verfügung.",
+            "p2": "Wir bei kids only möchten, dass sich Ihre Kinder in ihrer Kleidung wohlfühlen und gleichzeitig gut aussehen. Unser Sortiment besteht aus hochwertigen Marken zu Outlet-Preisen. Bei uns finden Sie Kleidung für jeden Anlass, ob Taufe, Alltag oder Skiurlaub! Unsere Mission ist es, Ihnen und Ihren Kindern das bestmögliche Einkaufserlebnis zu bieten. Mode soll Spaß machen!"
+        },
+        "storeCards": {
+            "parndorfTitle": "Parndorf",
+            "parndorfDesc": "Unser Flagship-Store im renommierten Fashion Outlet Parndorf bietet eine umfangreiche Auswahl an Premium-Kinderbekleidung in einer geräumigen, modernen Umgebung.",
+            "parndorfAlt": "Parndorf - Fashion Outlet Parndorf - Kinderbekleidung zu Outlet-Preisen",
+            "salzburgTitle": "Salzburg",
+            "salzburgDesc": "Unser Geschäft im Designer Outlet Salzburg verbindet den Charme der alten Welt mit zeitgenössischer Eleganz und schafft eine einzigartige Einkaufsatmosphäre.",
+            "salzburgAlt": "Salzburg - Designer Outlet Salzburg - Kinderbekleidung zu Outlet-Preisen",
+            "learnMore": "Mehr erfahren",
+            "altSuffix": "Kinderbekleidung zu Outlet-Preisen"
+        },
+        "brands": {
+            "title": "Unsere Top-Marken",
+            "subtitle": "Qualitätsmarken zu Outlet-Preisen - alles unter einem Dach"
+        },
+        "cta": {
+            "title": "Unsere Kollektionen für Kinder",
+            "description": "Unsere Kollektionen sind sorgfältig ausgewählt, um sicherzustellen, dass wir Produkte anbieten, die höchsten Qualitätsstandards entsprechen. Von süßen und bequemen Babykleidern bis hin zu trendigen Outfits für Teenager - bei uns finden Sie alles. Unsere Kleidungsstücke sind nicht nur stilvoll, sondern auch funktional und langlebig, um den Bedürfnissen Ihres Kindes gerecht zu werden.",
+            "parndorfBtn": "Parndorf Filiale",
+            "salzburgBtn": "Salzburg Filiale"
+        }
+    },
+    "header": {
+        "home": "Startseite",
+        "parndorf": "Parndorf",
+        "salzburg": "Salzburg",
+        "language": "Sprache:"
+    },
+    "footer": {
+        "parndorfTitle": "Filiale Parndorf",
+        "parndorfAddress": "Fashion Outlet Parndorf\n7111 Parndorf, Austria",
+        "salzburgTitle": "Filiale Salzburg",
+        "salzburgAddress": "Kasernen Straße 1, Top 248\n5073 Himmelreich, Austria",
+        "followUs": "Folgen Sie uns",
+        "rights": "© 2025 kids only. Alle Rechte vorbehalten.",
+        "impressum": "Impressum",
+        "privacy": "Datenschutz"
+    },
+    "branchPage": {
+        "contactInfo": "Kontaktinformationen",
+        "openingHours": "Öffnungszeiten",
+        "availableBrands": "Verfügbare Marken",
+        "gallery": "Geschäftsgalerie",
+        "features": "Geschäftsmerkmale",
+        "interior": "Innenraum",
+        "decorations": "Dekorationen",
+        "centerPlan": "Zentrumsplan",
+        "closed": "Geschlossen",
+        "comingSoon": "Öffnungszeiten werden in Kürze verfügbar sein",
+        "mapButton": "In Karten öffnen"
+    },
+    "parndorf": {
+        "title": "kids only Parndorf",
+        "description": "Unser Flagship-Store im Fashion Outlet Parndorf bietet eine große Auswahl an qualitativ hochwertiger Markenkleidung zu Outlet-Preisen. Erleben Sie Einkaufen in einer angenehmen Lifestyle-Atmosphäre mit freundlichem und qualifiziertem Fachpersonal.",
+        "features": [
+            "Große Auswahl - Jede Preisklasse",
+            "Kollektionen von Baby bis Teenager",
+            "Qualifiziertes Fachpersonal",
+            "Alle Marken unter einem Dach",
+            "Outlet-Preise",
+            "Angenehme Lifestyle-Atmosphäre"
+        ],
+        "metaTitle": "kids only Parndorf - Fashion Outlet Parndorf | Kinderbekleidung zu Outlet-Preisen",
+        "metaDescription": "Besuchen Sie kids only im Fashion Outlet Parndorf. Öffnungszeiten, Adresse und Kontakt für hochwertige Kinderbekleidung zu Outlet-Preisen."
+    },
+    "salzburg": {
+        "title": "kids only Salzburg",
+        "description": "Unser Geschäft im Designer Outlet Salzburg bietet qualitativ hochwertige Kinderbekleidung zu Outlet-Preisen. Finden Sie Kleidung für jeden Anlass in einer angenehmen Lifestyle-Atmosphäre - von Taufen über Alltagskleidung bis hin zu Skiurlauben.",
+        "features": [
+            "Designer Outlet Lage",
+            "Qualitätsmarken zu Outlet-Preisen",
+            "Freundliches Fachpersonal",
+            "Kleidung für jeden Anlass",
+            "Kollektionen von Baby bis Teenager",
+            "Angenehme Einkaufsatmosphäre"
+        ],
+        "metaTitle": "kids only Salzburg - Designer Outlet Salzburg | Kinderbekleidung zu Outlet-Preisen",
+        "metaDescription": "Besuchen Sie kids only im Designer Outlet Salzburg. Öffnungszeiten, Adresse und Kontaktinformationen für Premium-Kinderbekleidung zu Outlet-Preisen."
+    },
+    "impressum": {
+        "title": "Impressum",
+        "companyInfo": "Firmeninformationen",
+        "companyName": "Firmenname:",
+        "address": "Adresse:",
+        "phone": "Telefon:",
+        "email": "E-Mail:",
+        "legalInfo": "Rechtliche Angaben",
+        "court": "Firmenbuchgericht:",
+        "registerNumber": "Firmenbuchnummer:",
+        "ceo": "Geschäftsführer:",
+        "uid": "UID Nummer:",
+        "dispute": "Streitbeilegung",
+        "odrPlatform": "Plattform der EU-Kommission zur Online-Streitbeilegung:",
+        "disputeText": "Wir sind zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle weder verpflichtet noch bereit.",
+        "date": "Stand: Oktober 2025"
+    },
+    "privacyPage": {
+        "title": "Datenschutzerklärung",
+        "section1": {
+            "title": "1) Einleitung und Kontaktdaten des Verantwortlichen",
+            "p1": "1.1 Wir freuen uns, dass Sie unsere Website besuchen und bedanken uns für Ihr Interesse. Im Folgenden informieren wir Sie über den Umgang mit Ihren personenbezogenen Daten bei der Nutzung unserer Website. Personenbezogene Daten sind hierbei alle Daten, mit denen Sie persönlich identifiziert werden können.",
+            "p2": "1.2 Verantwortlicher für die Datenverarbeitung auf dieser Website im Sinne der Datenschutz-Grundverordnung (DSGVO) ist Johanns Handels und Gastro GmbH, Gewerbestrasse 4 Top 11, 7111 Parndorf, Österreich, Tel.: +43 2166 20451, E-Mail: office@johanns.cc. Der für die Verarbeitung von personenbezogenen Daten Verantwortliche ist diejenige natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet."
+        },
+        "section2": {
+            "title": "2) Datenerfassung beim Besuch unserer Website",
+            "p1": "2.1 Bei der bloß informatorischen Nutzung unserer Website, also wenn Sie sich nicht registrieren oder uns anderweitig Informationen übermitteln, erheben wir nur solche Daten, die Ihr Browser an den Seitenserver übermittelt (sog. „Server-Logfiles\"). Wenn Sie unsere Website aufrufen, erheben wir die folgenden Daten, die für uns technisch erforderlich sind, um Ihnen die Website anzuzeigen:",
+            "list": [
+                "Unsere besuchte Website",
+                "Datum und Uhrzeit zum Zeitpunkt des Zugriffes",
+                "Menge der gesendeten Daten in Byte",
+                "Quelle/Verweis, von welchem Sie auf die Seite gelangten",
+                "Verwendeter Browser",
+                "Verwendetes Betriebssystem",
+                "Verwendete IP-Adresse (ggf.: in anonymisierter Form)"
+            ],
+            "p2": "Die Verarbeitung erfolgt gemäß Art. 6 Abs. 1 lit. f DSGVO auf Basis unseres berechtigten Interesses an der Verbesserung der Stabilität und Funktionalität unserer Website. Eine Weitergabe oder anderweitige Verwendung der Daten findet nicht statt. Wir behalten uns allerdings vor, die Server-Logfiles nachträglich zu überprüfen, sollten konkrete Anhaltspunkte auf eine rechtswidrige Nutzung hinweisen.",
+            "p3": "2.2 Diese Website nutzt aus Sicherheitsgründen und zum Schutz der Übertragung personenbezogener Daten und anderer vertraulicher Inhalte (z.B. Bestellungen oder Anfragen an den Verantwortlichen) eine SSL-bzw. TLS-Verschlüsselung. Sie können eine verschlüsselte Verbindung an der Zeichenfolge „https://\" und dem Schloss-Symbol in Ihrer Browserzeile erkennen."
+        },
+        "section3": {
+            "title": "3) Hosting & Content-Delivery-Network",
+            "wix": {
+                "title": "3.1 Wix",
+                "p1": "Für das Hosting unserer Website und die Darstellung der Seiteninhalte nutzen wir das System des folgenden Anbieters: Wix HQ, 6350671, Nemal Tel Aviv St 40, Tel Aviv-Yafo, Israel",
+                "p2": "Daten werden zudem übertragen an: Wix Inc., 500 Terry A. Francois Boulevard, San Francisco, California 94158, USA",
+                "p3": "Sämtliche auf unserer Website erhobenen Daten werden auf den Servern des Anbieters verarbeitet.",
+                "p4": "Wir haben mit dem Anbieter einen Auftragsverarbeitungsvertrag geschlossen, der den Schutz der Daten unserer Seitenbesucher sicherstellt und eine unberechtigte Weitergabe an Dritte untersagt.",
+                "p5": "Bei einer Datenübermittlung an den Anbieterstandort ist ein angemessenes Datenschutzniveau durch einen Angemessenheitsbeschluss der Europäischen Kommission gewährleistet.",
+                "p6": "Für Datenübermittlungen in die USA hat sich der Anbieter dem EU-US-Datenschutzrahmen (EU-US Data Privacy Framework) angeschlossen, das auf Basis eines Angemessenheitsbeschlusses der Europäischen Kommission die Einhaltung des europäischen Datenschutzniveaus sicherstellt."
+            },
+            "google": {
+                "title": "3.2 Google Cloud CDN",
+                "p1": "Wir nutzen ein Content Delivery Network des folgenden Anbieters: Google Ireland Limited, Gordon House, 4 Barrow St, Dublin, D04 E5W5, Irland",
+                "p2": "Dieser Dienst ermöglicht uns, große Mediendateien wie Grafiken, Seiteninhalte oder Skripte über ein Netz regional verteilter Server schneller auszuliefern. Die Verarbeitung erfolgt zur Wahrung unseres berechtigten Interesses an der Verbesserung der Stabilität und Funktionalität unserer Website gem. Art. 6 Abs. 1 lit. f DSGVO.",
+                "p3": "Daten können zudem übertragen werden an: Google LLC, USA",
+                "p4": "Wir haben mit dem Anbieter einen Auftragsverarbeitungsvertrag geschlossen, der den Schutz der Daten unserer Seitenbesucher sicherstellt und eine unberechtigte Weitergabe an Dritte untersagt.",
+                "p5": "Für Datenübermittlungen in die USA hat sich der Anbieter dem EU-US-Datenschutzrahmen (EU-US Data Privacy Framework) angeschlossen, das auf Basis eines Angemessenheitsbeschlusses der Europäischen Kommission die Einhaltung des europäischen Datenschutzniveaus sicherstellt."
+            }
+        },
+        "section4": {
+            "title": "4) Cookies",
+            "p1": "Um den Besuch unserer Website attraktiv zu gestalten und die Nutzung bestimmter Funktionen zu ermöglichen, verwenden wir Cookies, also kleine Textdateien, die auf Ihrem Endgerät abgelegt werden. Teilweise werden diese Cookies nach Schließen des Browsers automatisch wieder gelöscht (sog. „Session-Cookies\"), teilweise verbleiben diese Cookies länger auf Ihrem Endgerät und ermöglichen das Speichern von Seiteneinstellungen (sog. „persistente Cookies\"). Im letzteren Fall können Sie die Speicherdauer der Übersicht zu den Cookie-Einstellungen Ihres Webbrowsers entnehmen.",
+            "p2": "Sofern durch einzelne von uns eingesetzte Cookies auch personenbezogene Daten verarbeitet werden, erfolgt die Verarbeitung gemäß Art. 6 Abs. 1 lit. b DSGVO entweder zur Durchführung des Vertrages, gemäß Art. 6 Abs. 1 lit. a DSGVO im Falle einer erteilten Einwilligung oder gemäß Art. 6 Abs. 1 lit. f DSGVO zur Wahrung unserer berechtigten Interessen an der bestmöglichen Funktionalität der Website sowie einer kundenfreundlichen und effektiven Ausgestaltung des Seitenbesuchs.",
+            "p3": "Sie können Ihren Browser so einstellen, dass Sie über das Setzen von Cookies informiert werden und einzeln über deren Annahme entscheiden oder die Annahme von Cookies für bestimmte Fälle oder generell ausschließen können.",
+            "p4": "Bitte beachten Sie, dass bei Nichtannahme von Cookies die Funktionalität unserer Website eingeschränkt sein kann."
+        },
+        "section5": {
+            "title": "5) Kontaktaufnahme",
+            "wix": {
+                "title": "5.1 Wix Bookings/Wix Events",
+                "p1": "Für die Bereitstellung einer Online-Terminbuchungsfunktion nutzen wir die Dienste des folgenden Anbieters: Wix HQ, 6350671, Nemal Tel Aviv St 40, Tel Aviv-Yafo, Israel",
+                "p2": "Daten werden zudem übertragen an: Wix Inc., 500 Terry A. Francois Boulevard, San Francisco, California 94158, USA",
+                "p3": "Zum Zwecke der Terminvergabe werden gemäß Art. 6 Abs. 1 lit. b DSGVO Vor- und Zuname sowie Mailadresse (und ggf. die Telefonnummer, sofern ein telefonischer Termin gewünscht ist) erhoben und gemäß Art. 6 Abs. 1 lit. f DSGVO auf Basis unseres berechtigten Interesses an einem effektiven Kundenmanagement und einer effizienten Terminverwaltung an den Anbieter übermittelt und dort für die Terminorganisation gespeichert.",
+                "p4": "Nach Abhaltung des Termins bzw. nach Ablauf des vereinbarten Terminzeitraums werden Ihre Daten vom Anbieter gelöscht.",
+                "p5": "Wir haben mit dem Anbieter einen Auftragsverarbeitungsvertrag geschlossen, der den Schutz der Daten unserer Seitenbesucher sicherstellt und eine unberechtigte Weitergabe an Dritte untersagt.",
+                "p6": "Bei einer Datenübermittlung an den Anbieterstandort ist ein angemessenes Datenschutzniveau durch einen Angemessenheitsbeschluss der Europäischen Kommission gewährleistet.",
+                "p7": "Für Datenübermittlungen in die USA hat sich der Anbieter dem EU-US-Datenschutzrahmen (EU-US Data Privacy Framework) angeschlossen, das auf Basis eines Angemessenheitsbeschlusses der Europäischen Kommission die Einhaltung des europäischen Datenschutzniveaus sicherstellt."
+            },
+            "whatsapp": {
+                "title": "5.2 WhatsApp-Business",
+                "p1": "Wir bieten Besuchern unserer Webseite die Möglichkeit, mit uns über den Nachrichtendienst WhatsApp der WhatsApp Ireland Limited, 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Irland, in Kontakt zu treten. Hierfür verwenden wir die sog. „Business-Version\" von WhatsApp.",
+                "p2": "Sofern Sie uns anlässlich eines konkreten Geschäfts (beispielsweise einer getätigten Bestellung) per WhatsApp kontaktieren, speichern und verwenden wir die von Ihnen bei WhatsApp genutzte Mobilfunknummer sowie – falls bereitgestellt – Ihren Vor- und Nachnamen gemäß Art. 6 Abs. 1 lit. b. DSGVO zur Bearbeitung und Beantwortung Ihres Anliegens. Auf Basis derselben Rechtsgrundlage werden wir Sie per WhatsApp gegebenenfalls um die Bereitstellung weiterer Daten (Bestellnummer, Kundennummer, Anschrift oder E-Mailadresse) bitten, um Ihre Anfrage einem bestimmten Vorgang zuordnen zu können.",
+                "p3": "Nutzen Sie unseren WhatsApp-Kontakt für allgemeine Anfragen (etwa zum Leistungsspektrum, zu Verfügbarkeiten oder zu unserem Internetauftritt) speichern und verwenden wir die von Ihnen bei WhatsApp genutzte Mobilfunknummer sowie – falls bereitgestellt – Ihren Vor- und Nachnamen gemäß Art. 6 Abs. 1 lit. f DSGVO auf Basis unseres berechtigten Interesses an der effizienten und zeitnahen Bereitstellung der gewünschten Informationen.",
+                "p4": "Ihre Daten werden stets nur zur Beantwortung Ihres Anliegens per WhatsApp verwendet. Eine Weitergabe an Dritte findet nicht statt.",
+                "p5": "Bitte beachten Sie, dass WhatsApp Business Zugriff auf das Adressbuch des von uns hierfür verwendeten mobilen Endgeräts erhält und im Adressbuch gespeicherte Telefonnummern automatisch an einen Server des Mutterkonzerns Meta Platforms Inc. in den USA überträgt. Für den Betrieb unseres WhatsApp-Business-Kontos verwenden wir ein mobiles Endgerät, in dessen Adressbuch ausschließlich die WhatsApp-Kontaktdaten solcher Nutzer gespeichert werden, die mit uns per WhatsApp auch in Kontakt getreten sind.",
+                "p6": "Hierdurch wird sichergestellt, dass jede Person, deren WhatsApp- Kontaktdaten in unserem Adressbuch gespeichert sind, bereits bei erstmaliger Nutzung der App auf seinem Gerät durch Akzeptanz der WhatsApp-Nutzungsbedingungen in die Übermittlung seiner WhatsApp-Telefonnummer aus den Adressbüchern seiner Chat-Kontakte gemäß Art. 6 Abs. 1 lit. a DSGVO eingewilligt hat. Eine Übermittlung von Daten solcher Nutzer, die WhatsApp nicht verwenden und/oder uns nicht über WhatsApp kontaktiert haben, wird insofern ausgeschlossen.",
+                "p7": "Zweck und Umfang der Datenerhebung und die weitere Verarbeitung und Nutzung der Daten durch WhatsApp sowie Ihre diesbezüglichen Rechte und Einstellungsmöglichkeiten zum Schutz Ihrer Privatsphäre entnehmen Sie bitte den Datenschutzhinweisen von WhatsApp: https://www.whatsapp.com/legal/?eea=1#privacy-policy",
+                "p8": "Im Rahmen der oben genannten Verarbeitungen kann es zu Datenübertragungen an Server von Meta Platforms Inc. in den USA kommen.",
+                "p9": "Für Datenübermittlungen in die USA hat sich der Anbieter dem EU-US-Datenschutzrahmen (EU-US Data Privacy Framework) angeschlossen, das auf Basis eines Angemessenheitsbeschlusses der Europäischen Kommission die Einhaltung des europäischen Datenschutzniveaus sicherstellt."
+            },
+            "contact": {
+                "title": "5.3 Im Rahmen der Kontaktaufnahme mit uns",
+                "p1": "Im Rahmen der Kontaktaufnahme mit uns (z.B. per Kontaktformular oder E-Mail) werden personenbezogene Daten erhoben. Welche Daten im Falle der Nutzung eines Kontaktformulars erhoben werden, ist aus dem jeweiligen Kontaktformular ersichtlich. Diese Daten werden ausschließlich zum Zweck der Beantwortung Ihres Anliegens bzw. für die Kontaktaufnahme und die damit verbundene technische Administration gespeichert und verwendet.",
+                "p2": "Rechtsgrundlage für die Verarbeitung dieser Daten ist unser berechtigtes Interesse an der Beantwortung Ihres Anliegens gemäß Art. 6 Abs. 1 lit. f DSGVO. Zielt Ihre Kontaktierung auf den Abschluss eines Vertrages ab, so ist zusätzliche Rechtsgrundlage für die Verarbeitung Art. 6 Abs. 1 lit. b DSGVO. Ihre Daten werden nach abschließender Bearbeitung Ihrer Anfrage gelöscht. Dies ist der Fall, wenn sich aus den Umständen entnehmen lässt, dass der betroffene Sachverhalt abschließend geklärt ist und sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen."
+            }
+        },
+        "section6": {
+            "title": "6) Registrierung beim Portal bzw. Forum",
+            "p1": "Sie können sich auf unserer Website unter Angabe von personenbezogenen Daten registrieren. Welche personenbezogenen Daten für die Registrierung verarbeitet werden, ergibt sich aus der Eingabemaske, die für die Registrierung verwendet wird. Wir verwenden für die Registrierung das sog. Double-opt-in-Verfahren, d. h. Ihre Registrierung ist erst abgeschlossen, wenn Sie zuvor Ihre Anmeldung über eine Ihnen zu diesem Zweck zugesandte Bestätigungs-E-Mail durch Klick auf den darin enthaltenem Link bestätigt haben. Falls Ihre diesbezügliche Bestätigung nicht binnen 24 Stunden erfolgt, wird Ihre Anmeldung automatisch aus unserer Datenbank gelöscht. Die Angabe der zuvor genannten Daten ist verpflichtend. Alle weiteren Informationen können Sie freiwillig durch Nutzung unseres Portals bereitstellen.",
+            "p2": "Wenn Sie unser Portal nutzen, speichern wir Ihre zur Vertragserfüllung erforderlichen Daten, auch evtl. Angaben zur Zahlungsweise, bis Sie Ihren Zugang endgültig löschen. Weiterhin speichern wir die von Ihnen angegebenen freiwilligen Daten für die Zeit Ihrer Nutzung des Portals, soweit Sie diese nicht zuvor löschen. Alle Angaben können Sie im geschützten Kundenbereich verwalten und ändern. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.",
+            "p3": "Darüber hinaus speichern wir alle von Ihnen veröffentlichten Inhalte (wie z.B. öffentliche Beiträge, Pinnwandeinträge, Gästebucheintragungen, etc.), um die Website zu betreiben. Wir haben ein berechtigtes Interesse an der Bereitstellung der Website mit dem vollständigen User-Generated-Content. Die Rechtsgrundlage hierfür ist Art. 6 Abs. 1 lit. f DSGVO. Wenn Sie Ihren Account löschen, bleiben Ihre öffentlichen Äußerungen, insbesondere im Forum, weiterhin für alle Leser sichtbar, Ihr Account ist jedoch nicht mehr abrufbar. Alle übrigen Daten werden in diesem Fall gelöscht."
+        },
+        "section7_marketing": {
+            "title": "7) Nutzung von Kundendaten zur Direktwerbung",
+            "newsletter": {
+                "title": "7.1 Anmeldung zu unserem Abonnement-/E-Mail-Newsletter",
+                "p1": "Indem Sie unser Anmeldeformular nutzen, erklären Sie sich ausdrücklich damit einverstanden, dass wir die von Ihnen freiwillig angegebenen personenbezogenen Daten, einschließlich Ihres Vor- und Nachnamens, Geburtsdatums, Ihrer E-Mail-Adresse, Ihrer Unterschrift sowie optionaler Angaben wie Telefonnummer, Adresse und Daten Ihres Kindes, die Name, Nachname, Geburtsdatum und Geschlecht umfassen können, verarbeiten. Die Erhebung dieser Daten erfolgt ausschließlich, um Ihnen Informationen zu unseren Angeboten, Aktionen, Promotions und Dienstleistungen zukommen zu lassen, die Verwaltung Ihrer Anmeldung zu ermöglichen und Ihnen eine persönliche Ansprache über unseren E-Mail-Newsletter und andere Kommunikationskanäle zu bieten. Die Verarbeitung dieser Daten erfolgt auf Grundlage Ihrer freiwilligen Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO, die Sie durch das Absenden des Formulars erteilen, sowie – soweit Sie uns Ihre E-Mailadresse beim Kauf von Waren oder Dienstleistungen zur Verfügung gestellt haben – auf Grundlage unseres berechtigten Interesses gemäß Art. 6 Abs. 1 lit. f DSGVO, um Ihnen personalisierte Informationen zu ähnlichen Produkten und Dienstleistungen zukommen zu lassen.",
+                "p2": "Ihre personenbezogenen Daten werden an den Dienstleister Brevo übermittelt, der die Speicherung, Verwaltung und den Versand der Newsletter übernimmt. Brevo verarbeitet und speichert Ihre Daten ausschließlich für die in diesem Zusammenhang beschriebenen Zwecke. Eine Weitergabe an Dritte erfolgt nur, wenn dies zur Vertragserfüllung, zur rechtlichen Absicherung oder aufgrund gesetzlicher Verpflichtungen erforderlich ist. Brevo gewährleistet ein angemessenes Datenschutzniveau, hat technische und organisatorische Maßnahmen zum Schutz Ihrer Daten implementiert und verarbeitet die Daten nur im Rahmen der von uns vorgegebenen Zwecke. Sie haben jederzeit das Recht, Ihre Einwilligung zu widerrufen, wodurch die weitere Nutzung Ihrer Daten für Werbezwecke beendet wird, soweit keine gesetzlichen Aufbewahrungspflichten entgegenstehen.",
+                "p3": "Die Angabe zusätzlicher personenbezogener Daten, wie Telefonnummer, Adresse oder Daten Ihres Kindes, erfolgt freiwillig, um eine individuelle Ansprache zu ermöglichen, organisatorische Abläufe zu optimieren oder spezielle Angebote bereitzustellen. Für Kinder geben Sie als Erziehungsberechtigter ausdrücklich Ihre Einwilligung in die Verarbeitung der personenbezogenen Daten Ihres Kindes. Sie versichern, dass die von Ihnen angegebenen Daten korrekt, vollständig und aktuell sind.",
+                "p4": "Ihre Daten werden ausschließlich zur Verwaltung der Anmeldung, für den Versand von Informationen, Angeboten, Promotions und Aktionen, für die Kommunikation im Rahmen des Newsletters sowie für interne Analysen und Optimierungen verwendet. Eine Nutzung der Daten zu anderen Zwecken erfolgt nicht. Sie haben jederzeit das Recht, der Verarbeitung Ihrer personenbezogenen Daten zu Werbezwecken zu widersprechen, wobei die weitere Verarbeitung ausschließlich dann erfolgen kann, wenn zwingende, schutzwürdige Gründe vorliegen, die Ihre Interessen, Rechte und Freiheiten überwiegen, oder wenn die Verarbeitung der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen dient.",
+                "p5": "Für die Anmeldung zu unserem Newsletter ist ausschließlich Ihre E-Mail-Adresse erforderlich. Weitere Angaben, wie Name, Geburtsdatum, Telefonnummer oder Kinderdaten, sind freiwillig und dienen der personalisierten Ansprache. Es erfolgt kein Double-Opt-in-Verfahren; Ihre Daten werden unmittelbar nach Absenden des Formulars in unserem Newsletter-System Brevo gespeichert und für den Versand von Informationen verwendet. Sie können den Newsletter jederzeit abbestellen, indem Sie den Abmeldelink im Newsletter nutzen oder uns eine entsprechende Nachricht an die im Formular angegebene E-Mail-Adresse senden. Nach Abmeldung werden Ihre Daten unverzüglich aus unserem Newsletter-Verteiler gelöscht, soweit keine anderweitigen gesetzlichen Aufbewahrungspflichten bestehen.",
+                "p6": "Ihre personenbezogenen Daten werden so lange gespeichert, wie dies für die Zwecke, für die sie erhoben wurden, erforderlich ist, oder bis Sie Ihre Einwilligung widerrufen. Gesetzliche Aufbewahrungsfristen, beispielsweise nach handels- oder steuerrechtlichen Vorgaben, bleiben unberührt. Daten, die nicht mehr benötigt werden, werden routinemäßig gelöscht. Für Daten, die auf Grundlage unseres berechtigten Interesses verarbeitet werden, können Sie jederzeit Widerspruch einlegen; in diesem Fall wird die Verarbeitung eingestellt, es sei denn, es liegen zwingende, schutzwürdige Gründe vor, die Ihre Interessen, Rechte und Freiheiten überwiegen, oder die Verarbeitung dient der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.",
+                "p7": "Wir weisen ausdrücklich darauf hin, dass die Nutzung der Dienste von Brevo dazu führen kann, dass Ihre Daten auf Servern in der Europäischen Union oder in Drittländern, insbesondere in den USA, verarbeitet und gespeichert werden. Brevo hat sich dem EU-US-Datenschutzrahmen (EU-US Data Privacy Framework) angeschlossen und gewährleistet damit ein angemessenes Datenschutzniveau in Übereinstimmung mit den Anforderungen der DSGVO.",
+                "p8": "Sie haben das Recht auf Auskunft über die zu Ihrer Person gespeicherten Daten, das Recht auf Berichtigung unrichtiger Daten, das Recht auf Löschung, das Recht auf Einschränkung der Verarbeitung, das Recht auf Unterrichtung über Datenverarbeitungen, das Recht auf Datenübertragbarkeit, das Recht auf Widerruf Ihrer Einwilligung sowie das Recht, eine Beschwerde bei der zuständigen Aufsichtsbehörde einzureichen. Der Widerruf der Einwilligung oder der Widerspruch gegen die Verarbeitung zu Werbezwecken kann jederzeit mit Wirkung für die Zukunft erfolgen.",
+                "p9": "Sie erkennen an, dass wir keine Haftung für technische Störungen, Datenverlust während der Übertragung oder für die Speicherung Ihrer Daten auf den Servern von Brevo übernehmen. Brevo ist für die sichere Speicherung und den Schutz Ihrer Daten verantwortlich, und wir haben mit Brevo einen Vertrag zur Auftragsverarbeitung abgeschlossen, der die Einhaltung der Datenschutzbestimmungen sicherstellt und eine unberechtigte Weitergabe an Dritte ausschließt. Die Datenübertragung erfolgt verschlüsselt, um die Sicherheit Ihrer personenbezogenen Daten zu gewährleisten.",
+                "p10": "Mit der Nutzung des Formulars erklären Sie sich damit einverstanden, dass wir Ihre Daten ausschließlich für die in dieser Erklärung genannten Zwecke verarbeiten. Sie verpflichten sich, keine falschen, irreführenden oder unvollständigen Angaben zu machen. Für die Verarbeitung von Daten von Minderjährigen ist stets die Zustimmung der Erziehungsberechtigten erforderlich. Sollten sich Ihre Angaben ändern oder nicht mehr korrekt sein, bitten wir um eine entsprechende Aktualisierung.",
+                "p11": "Wir behalten uns das Recht vor, diese Datenschutzerklärung und die Nutzungsbedingungen jederzeit anzupassen, um Änderungen der Rechtslage, der Datenverarbeitung oder der von uns eingesetzten Technologien Rechnung zu tragen. Die jeweils aktuelle Fassung ist auf unserer Website einsehbar. Durch die weitere Nutzung des Formulars nach Veröffentlichung von Änderungen erklären Sie sich mit der aktualisierten Fassung einverstanden."
+            },
+            "whatsapp": {
+                "title": "7.3 WhatsApp-Newsletter",
+                "p1": "Wenn Sie sich zu unserem WhatsApp-Newsletter anmelden, übersenden wir Ihnen regelmäßig Informationen zu unseren Angeboten per WhatsApp. Pflichtangabe für die Übersendung des Newsletters ist allein Ihre Mobilfunknummer.",
+                "p2": "Für den Versand des Newsletters nehmen Sie unsere mitgeteilte Mobilfunknummer in die Adress-Kontakte Ihres Mobilfunkgeräts auf und senden uns die Nachricht „Start\" per WhatsApp. Mit der Übersendung dieser WhatsApp-Nachricht erteilen Sie uns Ihre Einwilligung für die Nutzung Ihrer personenbezogenen Daten gemäß Art. 6 Abs. 1 lit. a DSGVO zum Zwecke der Newsletteübersendung. Wir nehmen Sie sodann in unseren Newsletter-Verteiler auf.",
+                "p3": "Die von uns bei der Anmeldung zum Newsletter erhobenen Daten werden ausschließlich für Zwecke der werblichen Ansprache im Wege des Newsletters verarbeitet. Sie können jederzeit den Newsletter abmelden, indem Sie uns die Nachricht „Stop\" per WhatsApp senden. Nach erfolgter Abmeldung wird Ihre Mobilfunknummer unverzüglich in unserem Newsletter-Verteiler gelöscht, soweit Sie nicht ausdrücklich in eine weitere Nutzung Ihrer Daten eingewilligt haben oder wir uns eine darüberhinausgehende Datenverwendung vorbehalten, die gesetzlich erlaubt ist und über die wir Sie in dieser Erklärung informieren.",
+                "p4": "Bitte beachten Sie, dass WhatsApp Zugriff auf das Adressbuch des von uns für den Newsletterversand verwendeten mobilen Endgeräts erhält und im Adressbuch gespeicherte Telefonnummern automatisch an einen Server von Facebook in den USA überträgt.",
+                "p5": "Für den Versand unseres WhatsApp-Newsletters verwenden wir daher ein mobiles Endgerät, in dessen Adressbuch ausschließlich die WhatsApp-Kontaktdaten unserer Newsletter-Empfänger gespeichert werden. Hierdurch wird sichergestellt, dass jede Person, deren WhatsApp- Kontaktdaten in unserem Adressbuch gespeichert sind, bereits bei erstmaliger Nutzung der App auf seinem Gerät durch Akzeptanz der WhatsApp-Nutzungsbedingungen in die Übermittlung seiner WhatsApp-Telefonnummer aus den Adressbüchern seiner Chat-Kontakte gemäß Art. 6 Abs. 1 lit. a DSGVO eingewilligt hat. Eine Übermittlung von Daten solcher Nutzer, die WhatsApp nicht verwenden und/oder uns nicht über WhatsApp kontaktiert haben, wird insofern ausgeschlossen.",
+                "p6": "Zweck und Umfang der Datenerhebung und die weitere Verarbeitung und Nutzung der Daten durch WhatsApp sowie Ihre diesbezüglichen Rechte und Einstellungsmöglichkeiten zum Schutz Ihrer Privatsphäre entnehmen Sie bitte den Datenschutzhinweisen von WhatsApp: https://www.whatsapp.com/legal/?eea=1#privacy-policy",
+                "p7": "Im Rahmen der oben genannten Verarbeitungen kann es zu Datenübertragungen an Server von Meta Platforms Inc. in den USA kommen.",
+                "p8": "Für Datenübermittlungen in die USA hat sich der Anbieter dem EU-US-Datenschutzrahmen (EU-US Data Privacy Framework) angeschlossen, das auf Basis eines Angemessenheitsbeschlusses der Europäischen Kommission die Einhaltung des europäischen Datenschutzniveaus sicherstellt."
+            }
+        },
+        "section8": {
+            "title": "8) Webanalysedienste",
+            "polyfill": {
+                "title": "8.1 Polyfill",
+                "p1": "Diese Website nutzt den Dienst des folgenden Anbieters: The Financial Times Ltd., Bracken House, 1 Friday Street, London, England, EC4M 9BT",
+                "p2": "Der Dienst installiert auf unserer Website ein Skript, das es ermöglicht, Inhalte auch auf älteren Browserversionen in hoher Qualität wiederzugeben, indem bei der Browseranfrage Polyfill-Dateien bereitgestellt und übermittelt werden, um fehlende Browserfunktionen zu überbrücken. Hierfür werden an den Anbieter automatisch bestimmte technische Informationen wie Browser-Details und Verbindungsdaten einschließlich Ihrer IP-Adresse in anonymisierter Form weitergegeben.",
+                "p3": "Die Informationen werden dazu verwendet, festzustellen, welche Polyfill-Dateien zur ordnunsgemäßen Wiedergabe der Seiteninhalte von Ihrem Browser benötigt werden.",
+                "p4": "Sofern hierbei auch personenbezogene Daten verarbeitet werden, erfolgt die Verarbeitung auf Basis unserer berechtigten Interessen an der optimalen Darstellung unseres Internetauftritts und der Optimierung des Nutzererlebnisses gemäß Art. 6 Abs. 1 lit. f DSGVO.",
+                "p5": "Bei einer Datenübermittlung an den Anbieterstandort ist ein angemessenes Datenschutzniveau durch einen Angemessenheitsbeschluss der Europäischen Kommission gewährleistet."
+            },
+            "wix": {
+                "title": "8.2 Wix Analytics",
+                "p1": "Diese Website nutzt den Webanalysedienst des folgenden Anbieters: Wix HQ, 6350671, Nemal Tel Aviv St 40, Tel Aviv-Yafo, Israel",
+                "p2": "Mithilfe von Cookies und/oder vergleichbaren Technologien (Tracking-Pixel, Web-Beacons, Algorithmen zum Auslesen von Endgeräte- und Browserinformationen) erhebt und speichert der Dienst pseudonymisierte Besucherdaten, darunter Informationen des verwendeten Endgeräts wie die IP-Adresse und Browserinformationen, um sie für statistische Analysen des Nutzungsverhaltens auf unserer Website auszuwerten und pseudonymisierte Nutzungsprofile zu erstellen. Unter anderem ist so die Auswertung von Bewegungsmustern (sog. Heatmaps) möglich, welche die Dauer von Seitenbesuchen sowie Interaktionen mit Seiteninhalten (z. B. Texteingaben, Scrollen, Klicks und Mouse-Overs) aufzeigen. Die Pseudonymisierung schließt eine direkte Personenbeziehbarkeit grundsätzlich aus. Eine Zusammenführung mit auf andere Weise erhobenen Klardaten zu Ihrer Person findet nicht statt.",
+                "p3": "Alle oben beschriebenen Verarbeitungen, insbesondere das Auslesen oder Speichern von Informationen auf dem verwendeten Endgerät, werden nur dann vollzogen, wenn Sie uns gemäß Art. 6 Abs. 1 lit. a DSGVO dazu Ihre ausdrückliche Einwilligung erteilt haben. Sie können Ihre erteilte Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen, indem Sie diesen Dienst in dem auf der Webseite bereitgestellten „Cookie-Consent-Tool\" deaktivieren.",
+                "p4": "Wir haben mit dem Anbieter einen Auftragsverarbeitungsvertrag geschlossen, der den Schutz der Daten unserer Seitenbesucher sicherstellt und eine unberechtigte Weitergabe an Dritte untersagt.",
+                "p5": "Bei einer Datenübermittlung an den Anbieterstandort ist ein angemessenes Datenschutzniveau durch einen Angemessenheitsbeschluss der Europäischen Kommission gewährleistet."
+            }
+        },
+        "section9": {
+            "title": "9) Seitenfunktionalitäten",
+            "facebook": {
+                "title": "9.1 Facebook-Plugins",
+                "p1": "Auf unserer Website werden Plugins des sozialen Netzwerkes des folgenden Anbieters verwendet: Meta Platforms Ireland Ltd., 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Irland",
+                "p2": "Diese Plugins ermöglichen direkte Interaktionen mit Inhalten auf dem sozialen Netzwerk.",
+                "p3": "Um den Schutz Ihrer Daten beim Besuch unserer Website zu erhöhen, sind die Plugins zunächst deaktiviert mittels sogenannter „2-Klick\"- oder „Shariff\"-Lösung in die Seite eingebunden.",
+                "p4": "Diese Einbindung gewährleistet, dass beim Aufruf einer Seite unseres Webauftritts, die solche Plugins enthält, noch keine Verbindung mit den Servern des Anbieters hergestellt wird.",
+                "p5": "Erst wenn Sie die Plugins aktivieren und damit gemäß Art. 6 Abs. 1 lit. a DSGVO Ihre Einwilligung in die Datenübermittlung erteilen, stellt Ihr Browser eine direkte Verbindung zu den Servern des Anbieters her. Hierbei werden, unabhängig von einem Login in ein vorhandenes Nutzerprofil, in bestimmtem Umfang Informationen über Ihr verwendetes Endgerät (darunter Ihre IP-Adresse), Ihren Browser und Ihren Seitenverlauf an den Anbieter übermittelt und dort gegebenenfalls weiterverarbeitet.",
+                "p6": "Wenn Sie in ein vorhandenes Nutzerprofil auf dem sozialen Netzwerk des Anbieters eingeloggt sind, werden Informationen zu über die Plugins vollzogenen Interaktionen außerdem dort veröffentlicht und Ihren Kontakten angezeigt.",
+                "p7": "Sie können Ihre Einwilligung jederzeit widerrufen indem Sie das aktivierte Plugin durch erneutes Anklicken wieder deaktivieren. Der Widerruf hat jedoch keinen Einfluss auf die Daten, die bereits an den Anbieter übertragen wurden.",
+                "p8": "Daten können zudem übertragen werden an: Meta Platforms Inc., USA",
+                "p9": "Wir haben mit dem Anbieter einen Auftragsverarbeitungsvertrag geschlossen, der den Schutz der Daten unserer Seitenbesucher sicherstellt und eine unberechtigte Weitergabe an Dritte untersagt.",
+                "p10": "Für Datenübermittlungen in die USA hat sich der Anbieter dem EU-US-Datenschutzrahmen (EU-US Data Privacy Framework) angeschlossen, das auf Basis eines Angemessenheitsbeschlusses der Europäischen Kommission die Einhaltung des europäischen Datenschutzniveaus sicherstellt."
+            },
+            "instagram": {
+                "title": "9.2 Instagram-Plugins",
+                "p1": "Auf unserer Website werden Plugins des sozialen Netzwerkes des folgenden Anbieters verwendet: Meta Platforms Ireland Ltd., 4 Grand Canal Square, Grand Canal Harbour, Dublin 2 Irland",
+                "p2": "Diese Plugins ermöglichen direkte Interaktionen mit Inhalten auf dem sozialen Netzwerk.",
+                "p3": "Um den Schutz Ihrer Daten beim Besuch unserer Website zu erhöhen, sind die Plugins zunächst deaktiviert mittels sogenannter „2-Klick\"- oder „Shariff\"-Lösung in die Seite eingebunden.",
+                "p4": "Diese Einbindung gewährleistet, dass beim Aufruf einer Seite unseres Webauftritts, die solche Plugins enthält, noch keine Verbindung mit den Servern des Anbieters hergestellt wird.",
+                "p5": "Erst wenn Sie die Plugins aktivieren und damit gemäß Art. 6 Abs. 1 lit. a DSGVO Ihre Einwilligung in die Datenübermittlung erteilen, stellt Ihr Browser eine direkte Verbindung zu den Servern des Anbieters her. Hierbei werden, unabhängig von einem Login in ein vorhandenes Nutzerprofil, in bestimmtem Umfang Informationen über Ihr verwendetes Endgerät (darunter Ihre IP-Adresse), Ihren Browser und Ihren Seitenverlauf an den Anbieter übermittelt und dort gegebenenfalls weiterverarbeitet.",
+                "p6": "Wenn Sie in ein vorhandenes Nutzerprofil auf dem sozialen Netzwerk des Anbieters eingeloggt sind, werden Informationen zu über die Plugins vollzogenen Interaktionen außerdem dort veröffentlicht und Ihren Kontakten angezeigt.",
+                "p7": "Sie können Ihre Einwilligung jederzeit widerrufen indem Sie das aktivierte Plugin durch erneutes Anklicken wieder deaktivieren. Der Widerruf hat jedoch keinen Einfluss auf die Daten, die bereits an den Anbieter übertragen wurden.",
+                "p8": "Daten können zudem übertragen werden: Meta Platforms Inc., USA",
+                "p9": "Wir haben mit dem Anbieter einen Auftragsverarbeitungsvertrag geschlossen, der den Schutz der Daten unserer Seitenbesucher sicherstellt und eine unberechtigte Weitergabe an Dritte untersagt.",
+                "p10": "Für Datenübermittlungen in die USA hat sich der Anbieter dem EU-US-Datenschutzrahmen (EU-US Data Privacy Framework) angeschlossen, das auf Basis eines Angemessenheitsbeschlusses der Europäischen Kommission die Einhaltung des europäischen Datenschutzniveaus sicherstellt."
+            },
+            "googleMaps": {
+                "title": "9.3 Google Maps",
+                "p1": "Diese Webseite nutzt einen Online-Kartendienst des folgenden Anbieters: Google Maps (API) von Google Ireland Limited, Gordon House, 4 Barrow St, Dublin, D04 E5W5, Irland (\"Google\").",
+                "p2": "Google Maps ist ein Webdienst zur Darstellung von interaktiven (Land-)Karten, um geographische Informationen visuell darzustellen. Über die Nutzung dieses Dienstes wird Ihnen unser Standort angezeigt und eine etwaige Anfahrt erleichtert.",
+                "p3": "Bereits beim Aufrufen derjenigen Unterseiten, in die die Karte von Google Maps eingebunden ist, werden Informationen über Ihre Nutzung unserer Website (wie z.B. Ihre IP-Adresse) an Server von Google übertragen und dort gespeichert, hierbei kann es auch zu einer Übermittlung an die Server der Google LLC. in den USA kommen. Dies erfolgt unabhängig davon, ob Google ein Nutzerkonto bereitstellt, über das Sie eingeloggt sind oder ob ein Nutzerkonto besteht. Wenn Sie bei Google eingeloggt sind, werden Ihre Daten direkt Ihrem Konto zugeordnet. Wenn Sie die Zuordnung mit Ihrem Profil bei Google nicht wünschen, müssen Sie sich vor Aktivierung des Buttons ausloggen. Google speichert Ihre Daten (selbst für nicht eingeloggte Nutzer) als Nutzungsprofile und wertet diese aus.",
+                "p4": "Die Erhebung, Speicherung und die Auswertung erfolgen gemäß Art. 6 Abs. 1 lit. f DSGVO auf Basis des berechtigten Interesses von Google an der Einblendung personalisierter Werbung, Marktforschung und/oder der bedarfsgerechten Gestaltung von Google-Websites. Ihnen steht ein Widerspruchsrecht gegen die Bildung dieser Nutzerprofile zu, wobei Sie sich für dessen Ausübung an Google wenden müssen. Wenn Sie mit der künftigen Übermittlung Ihrer Daten an Google im Rahmen der Nutzung von Google Maps nicht einverstanden sind, besteht auch die Möglichkeit, den Webdienst von Google Maps vollständig zu deaktivieren, indem Sie die Anwendung JavaScript in Ihrem Browser ausschalten. Google Maps und damit auch die Kartenanzeige auf dieser Internetseite kann dann nicht genutzt werden.",
+                "p5": "Soweit rechtlich erforderlich, haben wir zur vorstehend dargestellten Verarbeitung Ihrer Daten Ihre Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO eingeholt. Sie können Ihre erteilte Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen. Um Ihren Widerruf auszuüben, befolgen Sie bitte die vorstehend geschilderte Möglichkeit zur Vornahme eines Widerspruchs.",
+                "p6": "Für Datenübermittlungen in die USA hat sich der Anbieter dem EU-US-Datenschutzrahmen (EU-US Data Privacy Framework) angeschlossen, das auf Basis eines Angemessenheitsbeschlusses der Europäischen Kommission die Einhaltung des europäischen Datenschutzniveaus sicherstellt."
+            },
+            "googleTranslate": {
+                "title": "9.4 Google Translate",
+                "p1": "Diese Seite nutzt über eine API-Einbindung den Übersetzungsdienst \"Google Translate\" der Google Ireland Limited, Gordon House, 4 Barrow St, Dublin, D04 E5W5, Irland („Google\"). Damit die Übersetzung nach Ihrer Wahl einer Landessprache automatisiert angezeigt wird, nimmt der von Ihnen verwendete Browser Verbindung zu den Servern von Google auf. Google verwendet hierbei sog. \"Cookies\", das sind Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse Ihrer Nutzung der Website ermöglichen. Die durch das Cookie erzeugten Informationen über Ihre Benutzung dieser Website (einschließlich der gekürzten IP-Adresse) werden in der Regel an einen Server von Google übertragen und dort gespeichert, hierbei kann es auch zu einer Übermittlung an die Server der Google LLC. in den USA kommen.",
+                "p2": "Sofern personenbezogene Daten verarbeitet werden, erfolgt dies gemäß Art. 6 Abs. 1 lit. f DSGVO auf Basis unseres berechtigten Interesses an einer barrierefreien und universellen Zugänglichkeit unseres Internetauftritts.",
+                "p3": "Soweit rechtlich erforderlich, haben wir zur vorstehend dargestellten Verarbeitung Ihrer Daten Ihre Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO eingeholt. Sie können Ihre erteilte Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen. Um Ihren Widerruf auszuüben, deaktivieren Sie diesen Dienst im auf der Webseite bereitgestellten \"Cookie-Consent-Tool\".",
+                "p4": "Für Datenübermittlungen in die USA hat sich der Anbieter dem EU-US-Datenschutzrahmen (EU-US Data Privacy Framework) angeschlossen, das auf Basis eines Angemessenheitsbeschlusses der Europäischen Kommission die Einhaltung des europäischen Datenschutzniveaus sicherstellt."
+            },
+            "googleReviews": {
+                "title": "9.5 Google Kundenrezensionen (ehemals Google Zertifizierter-Händler-Programm)",
+                "p1": "Wir arbeiten mit Google im Rahmen des Programms „Google Kundenrezensionen\" zusammen. Der Anbieter ist Google Ireland Limited, Gordon House, 4 Barrow St, Dublin, D04 E5W5, Irland (\"Google\"). Dieses Programm gibt uns die Möglichkeit, Kundenrezensionen von Nutzern unserer Website einzuholen. Hierbei werden Sie nach einem Einkauf auf unserer Website gefragt, ob Sie an einer E-Mail-Umfrage von Google teilnehmen möchten.",
+                "p2": "Wenn Sie Ihre Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO erteilen, übermitteln wir Ihre E-Mail-Adresse an Google. Sie erhalten eine E-Mail von Google Kundenrezensionen, in der Sie gebeten werden, die Kauferfahrung auf unserer Website zu bewerten. Die von Ihnen abgegebene Bewertung wird anschließend mit unseren anderen Bewertungen zusammengefasst und in unserem Logo Google Kundenrezensionen sowie in unserem Merchant Center-Dashboard angezeigt. Außerdem wird Ihre Bewertung für Google Verkäuferbewertungen genutzt. Im Rahmen der Nutzung von Google Kundenrezensionen kann es auch zu einer Übermittlung von personenbezogenen Daten an die Server der Google LLC. in den USA kommen.",
+                "p3": "Sie können Ihre Einwilligung jederzeit durch eine Nachricht an den für die Datenverarbeitung Verantwortlichen oder gegenüber Google widerrufen.",
+                "p4": "Für Datenübermittlungen in die USA hat sich der Anbieter dem EU-US-Datenschutzrahmen (EU-US Data Privacy Framework) angeschlossen, das auf Basis eines Angemessenheitsbeschlusses der Europäischen Kommission die Einhaltung des europäischen Datenschutzniveaus sicherstellt."
+            },
+            "jobsEmail": {
+                "title": "9.6 Bewerbungen auf Stellenausschreibungen per E-Mail",
+                "p1": "Auf unserer Website schreiben wir in einer gesonderten Rubrik aktuell vakante Stellen aus, auf die sich Interessenten per E-Mail an die bereitgestellte Kontaktadresse bewerben können.",
+                "p2": "Die Bewerber müssen alle personenbezogenen Daten angeben, die für eine fundierte Beurteilung erforderlich sind, einschließlich allgemeiner Informationen wie Name, Anschrift und Kontaktmöglichkeiten, sowie leistungsbezogene Nachweise und gegebenenfalls gesundheitsbezogene Angaben. Einzelheiten zur Bewerbung sind der Stellenausschreibung zu entnehmen.",
+                "p3": "Nach Eingang der Bewerbung per E-Mail werden die Daten ausschließlich zum Zwecke der Bewerbungsbearbeitung gespeichert und ausgewertet. Bei Rückfragen nutzen wir entweder die E-Mail-Adresse oder Telefonnummer des Bewerbers. Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (bzw. § 26 Abs. 1 BDSG), in deren Sinne das Durchlaufen des Bewerbungsverfahrens als Arbeitsvertragsanbahnung gilt.",
+                "p4": "Soweit im Rahmen des Bewerbungsverfahrens besondere Kategorien von personenbezogenen Daten im Sinne des Art. 9 Abs. 1 DSGVO (z.B. Gesundheitsdaten wie Angaben über die Schwerbehinderteneigenschaft) bei Bewerbern angefragt werden, erfolgt die Verarbeitung gemäß Art. 9 Abs. 2 lit. b. DSGVO, damit wir die aus dem Arbeitsrecht und dem Recht der sozialen Sicherheit und des Sozialschutzes erwachsenden Rechte ausüben und unseren diesbezüglichen Pflichten nachkommen können.",
+                "p5": "Kumulativ oder alternativ kann die Verarbeitung der besonderen Datenkategorien auch auf Art. 9 Abs. 1 lit. h DSGVO gestützt sein, wenn sie zu Zwecken der Gesundheitsvorsorge oder der Arbeitsmedizin, für die Beurteilung der Arbeitsfähigkeit des Bewerbers, für die medizinische Diagnostik, die Versorgung oder Behandlung im Gesundheits- oder Sozialbereich oder für die Verwaltung von Systemen und Diensten im Gesundheits- oder Sozialbereich erfolgt.",
+                "p6": "Kommt es nicht zu einer Auswahl des Bewerbers oder zieht ein Bewerber seine Bewerbung vorzeitig zurück, werden dessen übermittelte Daten sowie sämtlicher elektronischer Schriftverkehr einschließlich der Bewerbungsmail nach einer entsprechenden Benachrichtigung spätestens nach 6 Monaten gelöscht. Diese Frist bemisst sich nach unserem berechtigten Interesse, etwaige Anschlussfragen zu der Bewerbung zu beantworten und gegebenenfalls unseren Nachweispflichten aus den Vorschriften zur Gleichbehandlung von Bewerbern nachkommen zu können.",
+                "p7": "Im Falle einer erfolgreichen Bewerbung werden die zur Verfügung gestellten Daten auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (bei Verarbeitung in Deutschland i.V.m. § 26 Abs. 1 BDSG) zum Zwecke der Durchführung des Beschäftigungsverhältnisses verarbeitet."
+            },
+            "jobsForm": {
+                "title": "9.7 Online-Bewerbungen über ein Formular",
+                "p1": "Auf unserer Website schreiben wir in einer gesonderten Rubrik aktuell vakante Stellen aus, auf die sich Interessenten über ein entsprechendes Formular bewerben können.",
+                "p2": "Die Bewerber müssen alle personenbezogenen Daten angeben, die für eine fundierte Beurteilung erforderlich sind, einschließlich allgemeiner Informationen wie Name, Anschrift und Kontaktmöglichkeiten, sowie leistungsbezogene Nachweise und gegebenenfalls gesundheitsbezogene Angaben. Einzelheiten zur Bewerbung sind der Stellenausschreibung zu entnehmen.",
+                "p3": "Im Zuge des Absendens des Formulars werden die Bewerberdaten entsprechend dem Stand der Technik verschlüsselt an uns übermittelt, von uns gespeichert und ausschließlich zum Zwecke der Bewerbungsbearbeitung ausgewertet. Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (bzw. § 26 Abs. 1 BDSG), in deren Sinne das Durchlaufen des Bewerbungsverfahrens als Arbeitsvertragsanbahnung gilt.",
+                "p4": "Soweit im Rahmen des Bewerbungsverfahrens besondere Kategorien von personenbezogenen Daten im Sinne des Art. 9 Abs. 1 DSGVO (z.B. Gesundheitsdaten wie Angaben über die Schwerbehinderteneigenschaft) bei Bewerbern angefragt werden, erfolgt die Verarbeitung gemäß Art. 9 Abs. 2 lit. b. DSGVO, damit wir die aus dem Arbeitsrecht und dem Recht der sozialen Sicherheit und des Sozialschutzes erwachsenden Rechte ausüben und unseren diesbezüglichen Pflichten nachkommen können.",
+                "p5": "Kumulativ oder alternativ kann die Verarbeitung der besonderen Datenkategorien auch auf Art. 9 Abs. 1 lit. h DSGVO gestützt sein, wenn sie zu Zwecken der Gesundheitsvorsorge oder der Arbeitsmedizin, für die Beurteilung der Arbeitsfähigkeit des Bewerbers, für die medizinische Diagnostik, die Versorgung oder Behandlung im Gesundheits- oder Sozialbereich oder für die Verwaltung von Systemen und Diensten im Gesundheits- oder Sozialbereich erfolgt.",
+                "p6": "Kommt es nicht zu einer Auswahl des Bewerbers oder zieht ein Bewerber seine Bewerbung vorzeitig zurück, werden dessen formularmäßig übermittelte Daten sowie sämtlicher elektronischer Schriftverkehr einschließlich der Bewerbungsmail nach einer entsprechenden Benachrichtigung spätestens nach 6 Monaten gelöscht. Diese Frist bemisst sich nach unserem berechtigten Interesse, etwaige Anschlussfragen zu der Bewerbung zu beantworten und gegebenenfalls unseren Nachweispflichten aus den Vorschriften zur Gleichbehandlung von Bewerbern nachkommen zu können.",
+                "p7": "Im Falle einer erfolgreichen Bewerbung werden die zur Verfügung gestellten Daten auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (bei Verarbeitung in Deutschland i.V.m. § 26 Abs. 1 BDSG) zum Zwecke der Durchführung des Beschäftigungsverhältnisses verarbeitet."
+            }
+        },
+        "section10": {
+            "title": "10) Rechte des Betroffenen",
+            "p1": "10.1 Das geltende Datenschutzrecht gewährt Ihnen gegenüber dem Verantwortlichen hinsichtlich der Verarbeitung Ihrer personenbezogenen Daten die nachstehenden Betroffenenrechte (Auskunfts- und Interventionsrechte), wobei für die jeweiligen Ausübungsvoraussetzungen auf die angeführte Rechtsgrundlage verwiesen wird:",
+            "list": [
+                "Auskunftsrecht gemäß Art. 15 DSGVO;",
+                "Recht auf Berichtigung gemäß Art. 16 DSGVO;",
+                "Recht auf Löschung gemäß Art. 17 DSGVO;",
+                "Recht auf Einschränkung der Verarbeitung gemäß Art. 18 DSGVO;",
+                "Recht auf Unterrichtung gemäß Art. 19 DSGVO;",
+                "Recht auf Datenübertragbarkeit gemäß Art. 20 DSGVO;",
+                "Recht auf Widerruf erteilter Einwilligungen gemäß Art. 7 Abs. 3 DSGVO;",
+                "Recht auf Beschwerde gemäß Art. 77 DSGVO."
+            ],
+            "title2": "10.2 WIDERSPRUCHSRECHT",
+            "p2": "WENN WIR IM RAHMEN EINER INTERESSENABWÄGUNG IHRE PERSONENBEZOGENEN DATEN AUFGRUND UNSERES ÜBERWIEGENDEN BERECHTIGTEN INTERESSES VERARBEITEN, HABEN SIE DAS JEDERZEITIGE RECHT, AUS GRÜNDEN, DIE SICH AUS IHRER BESONDEREN SITUATION ERGEBEN, GEGEN DIESE VERARBEITUNG WIDERSPRUCH MIT WIRKUNG FÜR DIE ZUKUNFT EINZULEGEN.",
+            "p3": "MACHEN SIE VON IHREM WIDERSPRUCHSRECHT GEBRAUCH, BEENDEN WIR DIE VERARBEITUNG DER BETROFFENEN DATEN ZU DIREKTWERBEZWECKEN."
+        },
+        "section7_storage": {
+            "title": "7) Dauer der Speicherung personenbezogener Daten",
+            "p1": "Die Dauer der Speicherung von personenbezogenen Daten bemisst sich anhand der jeweiligen Rechtsgrundlage, am Verarbeitungszweck und – sofern einschlägig – zusätzlich anhand der jeweiligen gesetzlichen Aufbewahrungsfrist (z.B. handels- und steuerrechtliche Aufbewahrungsfristen).",
+            "p2": "Bei der Verarbeitung von personenbezogenen Daten auf Grundlage einer ausdrücklichen Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO werden die betroffenen Daten so lange gespeichert, bis Sie Ihre Einwilligung widerrufen.",
+            "p3": "Existieren gesetzliche Aufbewahrungsfristen für Daten, die im Rahmen rechtsgeschäftlicher bzw. rechtsgeschäftsähnlicher Verpflichtungen auf der Grundlage von Art. 6 Abs. 1 lit. b DSGVO verarbeitet werden, werden diese Daten nach Ablauf der Aufbewahrungsfristen routinemäßig gelöscht, sofern sie nicht mehr zur Vertragserfüllung oder Vertragsanbahnung erforderlich sind und/oder unsererseits kein berechtigtes Interesse an der Weiterspeicherung fortbesteht.",
+            "p4": "Bei der Verarbeitung von personenbezogenen Daten auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO werden diese Daten so lange gespeichert, bis Sie Ihr Widerspruchsrecht nach Art. 21 Abs. 1 DSGVO ausüben, es sei denn, wir können zwingende schutzwürdige Gründe für die Verarbeitung nachweisen, die Ihre Interessen, Rechte und Freiheiten überwiegen, oder die Verarbeitung dient der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.",
+            "p5": "Bei der Verarbeitung von personenbezogenen Daten zum Zwecke der Direktwerbung auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO werden diese Daten so lange gespeichert, bis Sie Ihr Widerspruchsrecht nach Art. 21 Abs. 2 DSGVO ausüben.",
+            "p6": "Sofern sich aus den sonstigen Informationen dieser Erklärung über spezifische Verarbeitungssituationen nichts anderes ergibt, werden gespeicherte personenbezogene Daten im Übrigen dann gelöscht, wenn sie für die Zwecke, für die sie erhoben oder auf sonstige Weise verarbeitet wurden, nicht mehr notwendig sind."
+        }
+    },
+    "SubscriptionForm": {
+        "title": "Freunde von Kids Only",
+        "subtitle": "Erhalten Sie exklusive Vorteile per E-Mail.",
+        "branchSelection": "Filiale auswählen",
+        "branch": "Bevorzugte Filiale",
+        "selectBranch": "Filiale auswählen",
+        "personalData": "Persönliche Daten",
+        "firstName": "Vorname",
+        "firstNamePlaceholder": "Max",
+        "lastName": "Nachname",
+        "lastNamePlaceholder": "Mustermann",
+        "email": "E-Mail",
+        "emailPlaceholder": "max@beispiel.com",
+        "phone": "Telefonnummer",
+        "phonePlaceholder": "+43...",
+        "dob": "Geburtsdatum des Elternteils",
+        "dobPlaceholder": "TT.MM.JJJJ",
+        "address": "Adresse (Optional)",
+        "street": "Straße",
+        "postalCode": "Postleitzahl",
+        "city": "Stadt",
+        "province": "Bundesland",
+        "country": "Land",
+        "children": "Kinder",
+        "addChild": "Kind hinzufügen",
+        "noChildren": "Noch keine Kinder hinzugefügt.",
+        "child": "Kind",
+        "gender": "Geschlecht",
+        "male": "Männlich",
+        "female": "Weiblich",
+        "other": "Divers",
+        "agreement": "Zustimmung",
+        "agreeLabel": "Ich stimme zu, E-Mail-Updates und Newsletter von Kids Only zu erhalten. Durch das Aktivieren dieses Kontrollkästchens stimmen Sie unserer",
+        "agreeLinkDatenschut": "Datenschutzerklärung",
+        "and": "und den",
+        "nutzungsBedingungen": "Nutzungsbedingungen",
+        "zu": "zu.",
+        "agreeDescription": "Sie können sich jederzeit abmelden.",
+        "signature": "Unterschrift",
+        "clear": "Löschen",
+        "submitting": "Wird gesendet...",
+        "subscribe": "Anmelden",
+        "successTitle": "Vielen Dank!",
+        "successMessage": "Sie haben sich erfolgreich für unseren Newsletter angemeldet.",
+        "subscribeAnother": "Weitere Person anmelden",
+        "errorTitle": "Fehler",
+        "errorMessage": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+        "validationError": "Bitte korrigieren Sie die Fehler im Formular.",
+        "signatureRequired": "Bitte geben Sie Ihre Unterschrift ein."
+    }
+}

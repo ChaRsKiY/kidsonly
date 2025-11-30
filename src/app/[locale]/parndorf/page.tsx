@@ -1,87 +1,88 @@
-import { Metadata } from "next";
+import type { Metadata } from "next";
+import { setRequestLocale, getTranslations } from "next-intl/server";
+
 import { BranchPage } from "@/components/BranchPage";
+import type { Locale } from "@/i18n/routing";
+import {
+  SITE_BASE_URL,
+  buildLocalizedMetadata,
+  buildLocalizedUrl,
+} from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "kids only Parndorf - Fashion Outlet Parndorf | Kinderbekleidung zu Outlet-Preisen",
-  description: "Besuchen Sie kids only im Fashion Outlet Parndorf. Große Auswahl an qualitativ hochwertiger Kinderbekleidung zu Outlet-Preisen. Markenkleidung für Babys, Kleinkinder und Teenager. Öffnungszeiten, Adresse und Kontaktinformationen.",
-  keywords: [
-    "kids only Parndorf",
-    "Fashion Outlet Parndorf",
-    "Kinderbekleidung Parndorf",
-    "Outlet Parndorf",
-    "Kinderkleidung Parndorf",
-    "Markenkleidung Parndorf",
-    "Babykleidung Parndorf",
-    "Outlet Store Parndorf",
-    "Kinderbekleidung Burgenland",
-    "günstige Kinderkleidung Parndorf",
-  ],
-  openGraph: {
-    title: "kids only Parndorf - Fashion Outlet Parndorf",
-    description: "kids only im Fashion Outlet Parndorf bietet qualitativ hochwertige Kinderbekleidung zu Outlet-Preisen. Große Auswahl an Markenkleidung für alle Altersgruppen.",
-    url: "https://kidsonly.at/parndorf",
-    siteName: "kids only",
-    locale: "de_AT",
-    type: "website",
-    images: [
-      {
-        url: "https://kidsonly.at/parndorf/cover.jpg",
-        width: 1200,
-        height: 630,
-        alt: "kids only Parndorf - Fashion Outlet Parndorf",
-      },
+type PageProps = Readonly<{
+  params: { locale: Locale };
+}>;
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const locale = (await params).locale;
+  const t = await getTranslations({ locale, namespace: 'seo.parndorf' });
+
+  return buildLocalizedMetadata({
+    locale,
+    pathname: "/parndorf",
+    title: t('title'),
+    description: t('description'),
+    keywords: t('keywords').split(', '),
+    openGraph: {
+      title: t('ogTitle'),
+      description: t('ogDescription'),
+      images: [
+        {
+          url: `${SITE_BASE_URL}/parndorf/cover.png`,
+          width: 1200,
+          height: 630,
+          alt: "kids only Parndorf",
+        },
+      ],
+    },
+    twitter: {
+      images: [`${SITE_BASE_URL}/parndorf/cover.png`],
+    },
+  });
+}
+
+
+
+export default async function ParndorfPage({ params }: PageProps) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: 'parndorf' });
+  const tBranch = await getTranslations({ locale, namespace: 'branchPage' });
+
+  const parndorfData = {
+    name: t('title'),
+    address: "Fashion Outlet Parndorf",
+    city: "7111 Parndorf, Austria",
+    phone: "+43 (0) 2166 20451",
+    email: "office@johanns.cc",
+    mapLink: "https://maps.app.goo.gl/9V7PmazqSBiD16Vn8",
+    description: t('description'),
+    features: t.raw('features') as string[],
+    brands: [
+      "Reima",
+      "Vingino",
+      "Raized",
+      "Danamade",
+      "Happy Girl",
+      "Color Kids",
+      "iDo",
+      "Sarabanda",
+      "Minibanda",
+      "Blue Seven"
     ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "kids only Parndorf - Fashion Outlet Parndorf",
-    description: "kids only im Fashion Outlet Parndorf - Kinderbekleidung zu Outlet-Preisen.",
-    images: ["https://kidsonly.at/parndorf/cover.jpg"],
-  },
-  alternates: {
-    canonical: "https://kidsonly.at/parndorf",
-  },
-};
+    images: {
+      hero: "/parndorf/cover.png",
+      interior: "/parndorf/img1.png",
+      display: "/parndorf/img2.png",
+      centerPlan: "/parndorf/kidsonly_plan_parndorf.png"
+    }
+  };
 
-const parndorfData = {
-  name: "kids only Parndorf",
-  address: "Fashion Outlet Parndorf",
-  city: "7111 Parndorf, Austria",
-  phone: "+43 (0) 2166 20451",
-  email: "office@johanns.cc",
-  mapLink: "https://maps.app.goo.gl/9V7PmazqSBiD16Vn8",
-  description: "Unser Flagship-Store im Fashion Outlet Parndorf bietet eine große Auswahl an qualitativ hochwertiger Markenkleidung zu Outlet-Preisen. Erleben Sie Einkaufen in einer angenehmen Lifestyle-Atmosphäre mit freundlichem und qualifiziertem Fachpersonal.",
-  features: [
-    "Große Auswahl - Jede Preisklasse",
-    "Kollektionen von Baby bis Teenager",
-    "Qualifiziertes Fachpersonal",
-    "Alle Marken unter einem Dach",
-    "Outlet-Preise",
-    "Angenehme Lifestyle-Atmosphäre"
-  ],
-  brands: [
-    "Reima",
-    "Vingino",
-    "Raized",
-    "Danamade",
-    "Happy Girl",
-    "Color Kids",
-    "iDo",
-    "Sarabanda",
-    "Minibanda",
-    "Blue Seven"
-  ],
-  images: {
-    hero: "/parndorf/cover.png",
-    interior: "/parndorf/img1.png",
-    display: "/parndorf/img2.png",
-    centerPlan: "/parndorf/kidsonly_plan_parndorf.png"
-  }
-};
-
-export default async function ParndorfPage() {
+  const localizedUrl = buildLocalizedUrl(locale, "/parndorf");
   let openingHours: { day: string; hours: string }[] = [];
-  
+
   try {
     //const response = await fetch(`https://kidsonly.vercel.app/api/parndorf/hours`);
     //const data = await response.json();
@@ -101,14 +102,14 @@ export default async function ParndorfPage() {
     //  ];
     //}
     openingHours = [
-          { day: "Montag", hours: "9:00 – 19:30 Uhr" },
-          { day: "Dienstag", hours: "9:00 – 19:30 Uhr" },
-          { day: "Mittwoch", hours: "9:00 – 19:30 Uhr" },
-          { day: "Donnerstag", hours: "9:00 – 19:30 Uhr" },
-          { day: "Freitag", hours: "9:00 – 21:00 Uhr" },
-          { day: "Samstag", hours: "9:00 – 18:00 Uhr" },
-          { day: "Sonn- und Feiertage", hours: "Geschlossen" },
-      ];
+      { day: "Montag", hours: "9:00 – 19:30 Uhr" },
+      { day: "Dienstag", hours: "9:00 – 19:30 Uhr" },
+      { day: "Mittwoch", hours: "9:00 – 19:30 Uhr" },
+      { day: "Donnerstag", hours: "9:00 – 19:30 Uhr" },
+      { day: "Freitag", hours: "9:00 – 21:00 Uhr" },
+      { day: "Samstag", hours: "9:00 – 18:00 Uhr" },
+      { day: "Sonn- und Feiertage", hours: tBranch('closed') },
+    ];
   } catch (error) {
     openingHours = [];
   }
@@ -129,7 +130,7 @@ export default async function ParndorfPage() {
     const specifications: any[] = [];
 
     hours.forEach((item) => {
-      if (item.hours.includes("Geschlossen")) {
+      if (item.hours.includes(tBranch('closed'))) {
         return; // Skip closed days
       }
 
@@ -204,8 +205,8 @@ export default async function ParndorfPage() {
     "@type": "Store",
     "name": "kids only Parndorf",
     "description": "kids only im Fashion Outlet Parndorf bietet qualitativ hochwertige Kinderbekleidung zu Outlet-Preisen.",
-    "url": "https://kidsonly.at/parndorf",
-    "image": "https://kidsonly.at/parndorf/cover.jpg",
+    "url": localizedUrl,
+    "image": `${SITE_BASE_URL}/parndorf/cover.png`,
     "priceRange": "€€",
     "address": {
       "@type": "PostalAddress",
@@ -236,13 +237,13 @@ export default async function ParndorfPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Startseite",
-        "item": "https://kidsonly.at",
+        "item": buildLocalizedUrl(locale),
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Parndorf Filiale",
-        "item": "https://kidsonly.at/parndorf",
+        "item": localizedUrl,
       },
     ],
   };

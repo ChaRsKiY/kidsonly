@@ -1,85 +1,86 @@
-import { Metadata } from "next";
+import type { Metadata } from "next";
+import { setRequestLocale, getTranslations } from "next-intl/server";
+
 import { BranchPage } from "@/components/BranchPage";
+import type { Locale } from "@/i18n/routing";
+import {
+  SITE_BASE_URL,
+  buildLocalizedMetadata,
+  buildLocalizedUrl,
+} from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "kids only Salzburg - Designer Outlet Salzburg | Kinderbekleidung zu Outlet-Preisen",
-  description: "Besuchen Sie kids only im Designer Outlet Salzburg. Qualitativ hochwertige Kinderbekleidung zu Outlet-Preisen. Markenkleidung für Babys, Kleinkinder und Teenager. Öffnungszeiten, Adresse und Kontaktinformationen.",
-  keywords: [
-    "kids only Salzburg",
-    "Designer Outlet Salzburg",
-    "Kinderbekleidung Salzburg",
-    "Outlet Salzburg",
-    "Kinderkleidung Salzburg",
-    "Markenkleidung Salzburg",
-    "Babykleidung Salzburg",
-    "Outlet Store Salzburg",
-    "Kinderbekleidung Salzburg Umgebung",
-    "günstige Kinderkleidung Salzburg",
-  ],
-  openGraph: {
-    title: "kids only Salzburg - Designer Outlet Salzburg",
-    description: "kids only im Designer Outlet Salzburg bietet qualitativ hochwertige Kinderbekleidung zu Outlet-Preisen. Große Auswahl an Markenkleidung für alle Altersgruppen.",
-    url: "https://kidsonly.at/salzburg",
-    siteName: "kids only",
-    locale: "de_AT",
-    type: "website",
-    images: [
-      {
-        url: "https://kidsonly.at/salzburg/cover.JPG",
-        width: 1200,
-        height: 630,
-        alt: "kids only Salzburg - Designer Outlet Salzburg",
-      },
+type PageProps = Readonly<{
+  params: { locale: Locale };
+}>;
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const locale = (await params).locale;
+  const t = await getTranslations({ locale, namespace: 'seo.salzburg' });
+
+  return buildLocalizedMetadata({
+    locale,
+    pathname: "/salzburg",
+    title: t('title'),
+    description: t('description'),
+    keywords: t('keywords').split(', '),
+    openGraph: {
+      title: t('ogTitle'),
+      description: t('ogDescription'),
+      images: [
+        {
+          url: `${SITE_BASE_URL}/salzburg/cover.png`,
+          width: 1200,
+          height: 630,
+          alt: "kids only Salzburg",
+        },
+      ],
+    },
+    twitter: {
+      images: [`${SITE_BASE_URL}/salzburg/cover.png`],
+    },
+  });
+}
+
+
+
+export default async function SalzburgPage({ params }: PageProps) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: 'salzburg' });
+  const tBranch = await getTranslations({ locale, namespace: 'branchPage' });
+
+  const salzburgData = {
+    name: t('title'),
+    address: "Designer Outlet Salzburg",
+    city: "5073 Himmelreich, Austria",
+    phone: "+43 664 1549660",
+    email: "salzburg@kidsonly.at",
+    mapLink: "https://www.google.com/maps/place/Kasernenstra%C3%9Fe+1,+5073+Himmelreich/@47.7924914,12.9885677,19z/data=!4m6!3m5!1s0x47768fd83e44526f:0x9eb406a3cf96d836!8m2!3d47.7922849!4d12.9889551!16s%2Fg%2F11c3q386jx?entry=ttu&g_ep=EgoyMDI1MTAyMC4wIKXMDSoASAFQAw%3D%3D",
+    description: t('description'),
+    features: t.raw('features') as string[],
+    brands: [
+      "Vingino",
+      "Raized",
+      "Danamade",
+      "Happy Girl",
+      "Color Kids",
+      "iDo",
+      "Sarabanda",
+      "Minibanda",
+      "Blue Seven",
+      "Lego"
     ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "kids only Salzburg - Designer Outlet Salzburg",
-    description: "kids only im Designer Outlet Salzburg - Kinderbekleidung zu Outlet-Preisen.",
-    images: ["https://kidsonly.at/salzburg/cover.JPG"],
-  },
-  alternates: {
-    canonical: "https://kidsonly.at/salzburg",
-  },
-};
+    images: {
+      hero: "/salzburg/cover.png",
+      interior: "/salzburg/img2.png",
+      display: "/salzburg/img3.png",
+      centerPlan: "/salzburg/kidsonly_plan_salzburg.png"
+    }
+  };
 
-const salzburgData = {
-  name: "kids only Salzburg",
-  address: "Designer Outlet Salzburg",
-  city: "5073 Himmelreich, Austria",
-  phone: "+43 664 1549660",
-  email: "salzburg@kidsonly.at",
-  mapLink: "https://www.google.com/maps/place/Kasernenstra%C3%9Fe+1,+5073+Himmelreich/@47.7924914,12.9885677,19z/data=!4m6!3m5!1s0x47768fd83e44526f:0x9eb406a3cf96d836!8m2!3d47.7922849!4d12.9889551!16s%2Fg%2F11c3q386jx?entry=ttu&g_ep=EgoyMDI1MTAyMC4wIKXMDSoASAFQAw%3D%3D",
-  description: "Unser Geschäft im Designer Outlet Salzburg bietet qualitativ hochwertige Kinderbekleidung zu Outlet-Preisen. Finden Sie Kleidung für jeden Anlass in einer angenehmen Lifestyle-Atmosphäre - von Taufen über Alltagskleidung bis hin zu Skiurlauben.",
-  features: [
-    "Designer Outlet Lage",
-    "Qualitätsmarken zu Outlet-Preisen",
-    "Freundliches Fachpersonal",
-    "Kleidung für jeden Anlass",
-    "Kollektionen von Baby bis Teenager",
-    "Angenehme Einkaufsatmosphäre"
-  ],
-  brands: [
-    "Vingino",
-    "Raized",
-    "Danamade",
-    "Happy Girl",
-    "Color Kids",
-    "iDo",
-    "Sarabanda",
-    "Minibanda",
-    "Blue Seven",
-    "Lego"
-  ],
-  images: {
-    hero: "/salzburg/cover.png",
-    interior: "/salzburg/img2.png",
-    display: "/salzburg/img3.png",
-    centerPlan: "/salzburg/kidsonly_plan_salzburg.png"
-  }
-};
-
-export default async function SalzburgPage() {
+  const localizedUrl = buildLocalizedUrl(locale, "/salzburg");
   let openingHours: { day: string; hours: string }[] = [];
 
   try {
@@ -98,7 +99,7 @@ export default async function SalzburgPage() {
       { day: "Donnerstag", hours: "09:00 - 19:00 Uhr" },
       { day: "Freitag", hours: "09:00 - 19:00 Uhr" },
       { day: "Samstag", hours: "09:00 - 18:00 Uhr" },
-      { day: "Sonn- und Feiertage", hours: "Geschlossen" },
+      { day: "Sonn- und Feiertage", hours: tBranch('closed') },
     ];
   } catch (error) {
     openingHours = [];
@@ -120,7 +121,7 @@ export default async function SalzburgPage() {
     const specifications: any[] = [];
 
     hours.forEach((item) => {
-      if (item.hours.includes("Geschlossen")) {
+      if (item.hours.includes(tBranch('closed'))) {
         return; // Skip closed days
       }
 
@@ -195,8 +196,8 @@ export default async function SalzburgPage() {
     "@type": "Store",
     "name": "kids only Salzburg",
     "description": "kids only im Designer Outlet Salzburg bietet qualitativ hochwertige Kinderbekleidung zu Outlet-Preisen.",
-    "url": "https://kidsonly.at/salzburg",
-    "image": "https://kidsonly.at/salzburg/cover.JPG",
+    "url": localizedUrl,
+    "image": `${SITE_BASE_URL}/salzburg/cover.png`,
     "priceRange": "€€",
     "address": {
       "@type": "PostalAddress",
@@ -227,13 +228,13 @@ export default async function SalzburgPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Startseite",
-        "item": "https://kidsonly.at",
+        "item": buildLocalizedUrl(locale),
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Salzburg Filiale",
-        "item": "https://kidsonly.at/salzburg",
+        "item": localizedUrl,
       },
     ],
   };

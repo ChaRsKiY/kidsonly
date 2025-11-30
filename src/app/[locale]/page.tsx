@@ -1,60 +1,45 @@
-import { Metadata } from "next";
+import type { Metadata } from "next";
+import { setRequestLocale, getTranslations } from "next-intl/server";
+
 import { HomePage } from "@/components/HomePage";
+import type { Locale } from "@/i18n/routing";
+import { buildLocalizedMetadata, buildLocalizedUrl } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "kids only - Kinderbekleidung zu Outlet-Preisen | Parndorf & Salzburg",
-  description: "kids only bietet qualitativ hochwertige Kinderbekleidung zu Outlet-Preisen. Besuchen Sie unsere Filialen im Fashion Outlet Parndorf und Designer Outlet Salzburg. Große Auswahl an Markenkleidung für Babys, Kleinkinder und Teenager.",
-  keywords: [
-    "Kinderbekleidung",
-    "Kinderkleidung",
-    "Outlet-Preise",
-    "Parndorf",
-    "Salzburg",
-    "Fashion Outlet Parndorf",
-    "Designer Outlet Salzburg",
-    "Kinderbekleidungsgeschäft",
-    "Kinder Mode",
-    "Markenkleidung",
-    "Babykleidung",
-    "Teenager Kleidung",
-    "Outlet Store",
-    "Kinderbekleidung Österreich",
-    "günstige Kinderkleidung",
-  ],
-  openGraph: {
-    title: "kids only - Kinderbekleidung zu Outlet-Preisen | Parndorf & Salzburg",
-    description: "kids only bietet qualitativ hochwertige Kinderbekleidung zu Outlet-Preisen. Besuchen Sie unsere Filialen im Fashion Outlet Parndorf und Designer Outlet Salzburg.",
-    url: "https://kidsonly.at",
-    siteName: "kids only",
-    locale: "de_AT",
-    type: "website",
-    images: [
-      {
-        url: "https://kidsonly.at/logo.png",
-        width: 1200,
-        height: 630,
-        alt: "kids only - Kinderbekleidung zu Outlet-Preisen",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "kids only - Kinderbekleidung zu Outlet-Preisen",
-    description: "kids only bietet qualitativ hochwertige Kinderbekleidung zu Outlet-Preisen in Parndorf und Salzburg.",
-    images: ["https://kidsonly.at/logo.png"],
-  },
-  alternates: {
-    canonical: "https://kidsonly.at",
-  },
-};
+type PageProps = Readonly<{
+  params: { locale: Locale };
+}>;
 
-export default function Home() {
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const locale = (await params).locale;
+  const t = await getTranslations({ locale, namespace: 'seo.home' });
+
+  return buildLocalizedMetadata({
+    locale,
+    pathname: "/",
+    title: t('title'),
+    description: t('description'),
+    keywords: t('keywords').split(', '),
+    openGraph: {
+      title: t('ogTitle'),
+      description: t('ogDescription'),
+    },
+  });
+}
+
+export default async function Home({ params }: PageProps) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
+  const canonicalUrl = buildLocalizedUrl(locale);
+
   const organizationJsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "kids only",
     "description": "kids only bietet qualitativ hochwertige Kinderbekleidung zu Outlet-Preisen in Parndorf und Salzburg.",
-    "url": "https://kidsonly.at",
+    "url": canonicalUrl,
     "logo": "https://kidsonly.at/logo.png",
     "image": "https://kidsonly.at/logo.png",
     "priceRange": "€€",
@@ -90,12 +75,12 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "kids only",
-    "url": "https://kidsonly.at",
+    "url": canonicalUrl,
     "potentialAction": {
       "@type": "SearchAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "https://kidsonly.at/?q={search_term_string}",
+        "urlTemplate": `${canonicalUrl}?q={search_term_string}`,
       },
       "query-input": "required name=search_term_string",
     },
@@ -109,7 +94,7 @@ export default function Home() {
         "@type": "ListItem",
         "position": 1,
         "name": "Startseite",
-        "item": "https://kidsonly.at",
+        "item": canonicalUrl,
       },
     ],
   };

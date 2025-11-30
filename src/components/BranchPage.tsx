@@ -1,12 +1,10 @@
-"use client";
-
-import { useState } from "react";
 import { MotionDiv } from "./motion";
 import { ImageWithFallback } from "./ImageWithFallback";
-import { ImageModal } from "./ImageModal";
 import { MapPin, Phone, Mail, Clock, ZoomIn } from "lucide-react";
 import { Card } from "./ui/card";
 import { MapButton } from "./MapButton";
+import { getTranslations } from "next-intl/server";
+import GalleryClientBlock from "./GalleryClientBlock";
 
 interface BranchPageProps {
   branch: {
@@ -32,16 +30,8 @@ interface BranchPageProps {
   }[];
 }
 
-export function BranchPage({ branch, openingHours }: BranchPageProps) {
-  const [modalImage, setModalImage] = useState<{ src: string; alt: string } | null>(null);
-
-  const openModal = (src: string, alt: string) => {
-    setModalImage({ src, alt });
-  };
-
-  const closeModal = () => {
-    setModalImage(null);
-  };
+export async function BranchPage({ branch, openingHours }: BranchPageProps) {
+  const t = await getTranslations('branchPage');
 
   return (
     <main className="min-h-screen bg-white dark:bg-zinc-950 transition-colors" itemScope itemType="https://schema.org/Store">
@@ -55,7 +45,7 @@ export function BranchPage({ branch, openingHours }: BranchPageProps) {
           fill
           priority
         />
-        
+
         <div className="relative z-20 container mx-auto px-6 pb-16">
           <MotionDiv
             initial={{ opacity: 0, y: 30 }}
@@ -89,7 +79,7 @@ export function BranchPage({ branch, openingHours }: BranchPageProps) {
           >
             <Card className="bg-zinc-50 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 p-8 h-full flex flex-col justify-between" itemScope itemType="https://schema.org/PostalAddress">
               <div className="flex flex-col">
-                <h2 className="text-2xl text-zinc-900 dark:text-zinc-100 mb-6">Kontaktinformationen</h2>
+                <h2 className="text-2xl text-zinc-900 dark:text-zinc-100 mb-6">{t('contactInfo')}</h2>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
                     <MapPin className="w-5 h-5 text-primary mt-1 shrink-0" aria-hidden="true" />
@@ -112,7 +102,7 @@ export function BranchPage({ branch, openingHours }: BranchPageProps) {
                   </div>
                 </div>
               </div>
-              
+
               <MapButton mapLink={branch.mapLink} />
             </Card>
           </MotionDiv>
@@ -127,7 +117,7 @@ export function BranchPage({ branch, openingHours }: BranchPageProps) {
             <Card className="bg-zinc-50 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 p-8 h-full" itemScope itemType="https://schema.org/OpeningHoursSpecification">
               <div className="flex items-center gap-2 mb-6">
                 <Clock className="w-6 h-6 text-primary" aria-hidden="true" />
-                <h2 className="text-2xl text-zinc-900 dark:text-zinc-100">Öffnungszeiten</h2>
+                <h2 className="text-2xl text-zinc-900 dark:text-zinc-100">{t('openingHours')}</h2>
               </div>
               <div className="space-y-3" itemScope itemType="https://schema.org/OpeningHoursSpecification">
                 {Array.isArray(openingHours) && openingHours.length > 0 ? (
@@ -141,7 +131,7 @@ export function BranchPage({ branch, openingHours }: BranchPageProps) {
                   ))
                 ) : (
                   <div className="text-zinc-500 dark:text-zinc-400 text-center py-4">
-                    Öffnungszeiten werden in Kürze verfügbar sein
+                    {t('comingSoon')}
                   </div>
                 )}
               </div>
@@ -157,7 +147,7 @@ export function BranchPage({ branch, openingHours }: BranchPageProps) {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="mb-16"
         >
-          <h2 className="text-3xl text-zinc-900 dark:text-zinc-100 mb-6">Verfügbare Marken</h2>
+          <h2 className="text-3xl text-zinc-900 dark:text-zinc-100 mb-6">{t('availableBrands')}</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {branch.brands.map((brand, index) => (
               <MotionDiv
@@ -175,79 +165,7 @@ export function BranchPage({ branch, openingHours }: BranchPageProps) {
           </div>
         </MotionDiv>
 
-        {/* Gallery */}
-        <MotionDiv
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="mb-16"
-        >
-          <h2 className="text-3xl text-zinc-900 dark:text-zinc-100 mb-6">Geschäftsgalerie</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            <MotionDiv
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              whileHover={{ scale: 1.02 }}
-              className="relative h-96 rounded-xl overflow-hidden group cursor-pointer"
-              onClick={() => openModal(branch.images.interior, "Geschäftsinnenraum")}
-            >
-              <ImageWithFallback
-                src={branch.images.interior}
-                alt={`${branch.name} - Geschäftsinnenraum mit Kinderbekleidung`}
-                className="object-cover group-hover:scale-105 transition-transform duration-500"
-                fill
-              />
-              <div className="absolute inset-0 bg-linear-to-t from-zinc-950/60 to-transparent flex items-end justify-between p-6">
-                <p className="text-zinc-100 text-xl">Innenraum</p>
-                <ZoomIn className="w-6 h-6 text-zinc-100 opacity-0 group-hover:opacity-100 transition-opacity" />
-              </div>
-            </MotionDiv>
-            <MotionDiv
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              whileHover={{ scale: 1.02 }}
-              className="relative h-96 rounded-xl overflow-hidden group cursor-pointer"
-              onClick={() => openModal(branch.images.display, "Kleidungsausstellung")}
-            >
-              <ImageWithFallback
-                src={branch.images.display}
-                alt={`${branch.name} - Kleidungsausstellung und Dekorationen`}
-                className="object-cover group-hover:scale-105 transition-transform duration-500"
-                fill
-              />
-              <div className="absolute inset-0 bg-linear-to-t from-zinc-950/60 to-transparent flex items-end justify-between p-6">
-                <p className="text-zinc-100 text-xl">Dekorationen</p>
-                <ZoomIn className="w-6 h-6 text-zinc-100 opacity-0 group-hover:opacity-100 transition-opacity" />
-              </div>
-            </MotionDiv>
-          </div>
-          <MotionDiv
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            whileHover={{ scale: 1.01 }}
-            className="relative rounded-xl overflow-hidden group mt-6 cursor-pointer"
-            onClick={() => openModal(branch.images.centerPlan, "Zentrumsplan")}
-          >
-            <ImageWithFallback
-              src={branch.images.centerPlan}
-              alt={`${branch.name} - Zentrumsplan und Lage des Geschäfts`}
-              className="object-cover group-hover:scale-105 transition-transform duration-500 w-full h-full"
-              width={1000}
-              height={1000}
-            />
-            <div className="absolute inset-0 bg-linear-to-t from-zinc-950/60 to-transparent flex items-end justify-between p-6">
-              <p className="text-zinc-100 text-xl">Zentrumsplan</p>
-              <ZoomIn className="w-6 h-6 text-zinc-100 opacity-0 group-hover:opacity-100 transition-opacity" />
-            </div>
-          </MotionDiv>
-        </MotionDiv>
+        <GalleryClientBlock branch={branch} />
 
         {/* Features */}
         <MotionDiv
@@ -256,7 +174,7 @@ export function BranchPage({ branch, openingHours }: BranchPageProps) {
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          <h2 className="text-3xl text-zinc-900 dark:text-zinc-100 mb-6">Geschäftsmerkmale</h2>
+          <h2 className="text-3xl text-zinc-900 dark:text-zinc-100 mb-6">{t('features')}</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {branch.features.map((feature, index) => (
               <MotionDiv
@@ -274,16 +192,6 @@ export function BranchPage({ branch, openingHours }: BranchPageProps) {
           </div>
         </MotionDiv>
       </section>
-
-      {/* Image Modal */}
-      {modalImage && (
-        <ImageModal
-          isOpen={!!modalImage}
-          onClose={closeModal}
-          src={modalImage.src}
-          alt={modalImage.alt}
-        />
-      )}
     </main>
   );
 }
